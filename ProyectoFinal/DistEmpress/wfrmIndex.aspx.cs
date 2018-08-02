@@ -13,19 +13,21 @@ namespace DistEmpress
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            switch(Convert.ToChar(Session["perfil"]))
-            {
-                case 'C':
-                    usuario.Style.Add("display", "none");
-                    ingresoPedido.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-                case 'V':
-                    usuario.Style.Add("display", "none");
-                    ingresoProducto.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-            }
+            //switch(Convert.ToChar(Session["perfil"]))
+            //{
+            //    case 'A':
+            //        Ventas.Style.Add("display", "none");
+            //        Compras.Style.Add("display", "none");
+            //        break;
+            //    case 'C':
+            //        Admin.Style.Add("display", "none");
+            //        Compras.Style.Add("display", "none");
+            //        break;
+            //    case 'V':
+            //        Admin.Style.Add("display", "none");
+            //        Compras.Style.Add("display", "none");
+            //        break;
+            //}
         }
     }
 }

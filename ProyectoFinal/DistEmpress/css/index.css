@@ -11,6 +11,8 @@ body{
 }
 
 .cuerpo {
+    width:auto;
+    height:auto;
     background-color: lightgray;
     border-color: lightgray;
     font-family: 'Century Gothic';
@@ -40,12 +42,3 @@ body{
 	font-size: 15px;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-

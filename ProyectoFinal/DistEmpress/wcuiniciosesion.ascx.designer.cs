@@ -13,22 +13,13 @@ namespace DistEmpress {
     public partial class wcuiniciosesion {
         
         /// <summary>
-        /// Control Image1.
+        /// Control inptxt_usuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
-        /// <summary>
-        /// Control txt_usuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_usuario;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inptxt_usuario;
         
         /// <summary>
         /// Control RequiredFieldValidator1.
@@ -40,13 +31,13 @@ namespace DistEmpress {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// Control txt_clave.
+        /// Control inptxt_clave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_clave;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword inptxt_clave;
         
         /// <summary>
         /// Control RequiredFieldValidator2.
@@ -58,22 +49,13 @@ namespace DistEmpress {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// Control lbl_recuperarClave.
+        /// Control lbtn_recuperar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbl_recuperarClave;
-        
-        /// <summary>
-        /// Control btn_ingresar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_ingresar;
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_recuperar;
         
         /// <summary>
         /// Control lbl_mensaje.
