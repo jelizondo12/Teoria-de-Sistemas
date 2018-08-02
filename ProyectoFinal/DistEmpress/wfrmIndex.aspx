@@ -135,6 +135,7 @@
     
 <body>
     <form id="form1" runat="server">
+<<<<<<< HEAD
      <!-- CONTENEDOR -->
         <section id="contenedor">
 
@@ -161,34 +162,31 @@
                                 <li><a href="wfrmIngresoPedido.aspx"><asp:Image ID="Image67" runat="server" ImageUrl="~/imagenes/e-commerce.png" Height="32" ImageAlign="AbsMiddle" Width="32" />Pedido</a></li>
                                 <li><a href="wfrmConsultas.aspx"><asp:Image ID="Image11" runat="server" ImageUrl="~/imagenes/report.png" Height="32" ImageAlign="AbsMiddle" Width="32" />Reportes</a></li>
                                 <li><a href="wfrmIndex.aspx"><asp:Image ID="Image68" runat="server" ImageUrl="~/imagenes/exit.png"  Height="32" ImageAlign="AbsMiddle" Width="32" />Salir</a></li>
+=======
+        <header>
+        <div class="menu_bar">
+                <a href="#" class="bt-menu">Menú</a>
+            </div>
+>>>>>>> 6650559ab8230b393b1b872575eae673bc7f583b
 
-                                    </ul>
-                                </li>
-                        <%-- Menu 3 --%>
-                        <li id="Ventas" runat="server"><a href="#">Vendedor</a>
-                            <ul>
-                                <li><a href="wfrmIngresoProducto.aspx"><asp:Image ID="Image5" runat="server" ImageUrl="~/imagenes/comestibles.png" Height="32" ImageAlign="AbsMiddle" Width="32" />Producto</a></li>
-                                <li><a href="wfrmIngresoPedido.aspx"><asp:Image ID="Image6" runat="server" ImageUrl="~/imagenes/e-commerce.png" Height="32" ImageAlign="AbsMiddle" Width="32" />Pedido</a></li>
-                                <li><a href="wfrmIndex.aspx"><asp:Image ID="Image7" runat="server" ImageUrl="~/imagenes/exit.png"  Height="32" ImageAlign="AbsMiddle" Width="32" />Salir</a></li>
-                                    </ul>
-                                </li>
-                        <%-- menu 4 --%>
-                        <li id="Compras" runat="server"><a href="#">Inventario</a>
-                            <ul>                              
-                                <li><a href="wfrmConsultas.aspx"><asp:Image ID="Image8" runat="server" ImageUrl="~/imagenes/report.png" Height="32" ImageAlign="AbsMiddle" Width="32" />Reportes</a></li>                                
-                                <li><a href="wfrmIndex.aspx"><asp:Image ID="Image9" runat="server" ImageUrl="~/imagenes/exit.png"  Height="32" ImageAlign="AbsMiddle" Width="32" />Salir</a></li>
-                                    </ul>
-                        </li>
-                        <%-- menu 5 --%>
-                        <li><a href="#">Salir</a>
-                            <ul>
-                                <li><a href="wfrmInicioSesion.aspx"><asp:Image ID="Image65" runat="server" Height="32px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/exit.png" Width="32px" />
-                                    &nbsp;Cerrar Sesión</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </blockquote>
+            <nav class="auto-style8">
+                <ul>
+                    <li><a href="wfrmIndex.aspx">Inicio</a></li>
+                    <li class="submenu">
+                        <a href="#">Usuario</a>
+                        <ul class="children">
+                            <li><a href="wfrmRegistroUsuario.aspx">Registro de Usuarios</a></li>
+                            <li><a href="wfrmRecuperacion_Clave.aspx">Recuperación Contraseña</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="wfrmIngresoProducto.aspx">Producto</a></li>
+                    <li><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
+                    <li><a href="wfrmConsultas.aspx">Reportes</a></li>
+                    <li><a href="wfrmInicioSesion.aspx">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+       
             
             <%-- cuerpo --%>
              <br />
