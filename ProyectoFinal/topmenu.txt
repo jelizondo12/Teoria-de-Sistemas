@@ -31,7 +31,7 @@
                                     </ul>
                         </li>
                         <%-- menu 5 --%>
-                        <li><a href="#">Salir</a>
+                        <li><a href="#">Cerrar Sesion</a>
                             <ul>
                                 <li><a href="wfrmInicioSesion.aspx"><asp:Image ID="Image65" runat="server" Height="32px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/exit.png" Width="32px" />
                                     &nbsp;Cerrar Sesión</a></li>
