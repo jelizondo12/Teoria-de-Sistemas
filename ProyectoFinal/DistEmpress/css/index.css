@@ -1,0 +1,79 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+	background-color: #000;	
+	margin-top:0px;	
+}
+
+/* INICIO */
+
+#contenedor{
+	width:1100px;
+	margin:0 auto;
+	background-color:#000;
+    font-family:'Century Gothic';
+    font-size:small;
+    align-content:center;
+    position:center;
+    text-align:center;
+}
+#cuerpo{
+    border-color:#CCCCCC;
+    border:solid;
+    margin-left: 100px;
+    border-radius:15px;
+    text-align:center;
+    position:center;
+    align-content:center;
+
+}
+
+/* PIE DE PAGINA */
+footer{
+	width: 1100px;
+	height: 150px;
+	color:#FFF;
+	font-family: arial;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	background-color:#000;
+}
+
+
+h1{
+	font-family: 'Century Gothic';
+	font-size: 15px;
+	font-weight: bold;
+}
+
+h2{
+	font-family: 'Century Gothic';
+	font-size: 15px;
+	font-weight: bold;
+}
+
+header{
+	width: 1100px;
+	height: 200px;
+	left: 0px;
+	top: 0px;
+    color:#fff;
+	font-family: arial;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	line-height:180px;
+	overflow: hidden;
+	background-color:#000;
+}
+
+
+
+
+
+
+
+
