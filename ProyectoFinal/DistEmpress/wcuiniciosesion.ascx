@@ -14,7 +14,8 @@
         text-align: center;
     }
     .auto-style9 {
-        text-align: center;
+       text-align: center;
+       color: #CCCCCC;
     }
     .auto-style10 {
         color: #0000FF;

@@ -27,3 +27,14 @@ C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb

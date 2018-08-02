@@ -13,11 +13,6 @@
         .auto-style12 {
             font-size: large;
         }
-        .auto-style13 {
-            font-size: large;
-            width: 1178px;
-            text-align: center;
-        }
     </style>
 </head>
 
@@ -31,31 +26,17 @@
             <header>
                 <article class="logo">
                     <section id="logo" class="fadeIn">
-                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center">
+                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center"/>
                     </section>
                 </article>
             </header>
-
-            <div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-            </div>
             <div>
                 <uc1:wcuInicioSesion ID="wcuIniciosesion" runat="server" />
             </div>
             <%--Pie de pagina--%>
-    <footer id="pie">
-        <article>
-            <br />
-            <br />
-            <br />
-            <h1 class="auto-style13">Programación IV- III Cuatrimestre UAM &COPY 2017</h1>
-            <h2 class="auto-style9">Proyecto Final</h2>
-        </article>
-    </footer>
+
+            <!--#include virtual="/menu/footer.txt" -->
+
         </section>
     </form>
 </body>

@@ -142,7 +142,7 @@
             <header>
                 <article class="logo">
                     <section id="logo" class="fadeIn">
-                        <img src="imagenes/logo.PNG" alt="Logo Empresarial">
+                        <img src="imagenes/logo.PNG" alt="Logo Empresarial"/>
                     </section>
                 </article>
             </header>
@@ -325,62 +325,11 @@
                                 &nbsp;</td>
                         </tr>
                     </table>
-                            <br />
-                            <br /> 
-                        <br />
-                        <br />
-                        <br />
-                        <br /><br /><br /><br /><br /><br /><br />
                 </blockquote>
-
                 <!-- PIE DE PAGINA -->
-                <footer>
-                    <article>
-                        <h1>Programación IV - III Cuatrimestre UAM &COPY 2017</h1>
-                        <h2>Proyecto Final</h2>
-                    </article>
-                </footer>
+                <!--#include virtual="/menu/footer.txt" -->
             </div>
         </section>
-        <style>        
-            .Admin, .Compras, .Ventas {
-	            display: none;
-            }
-
-            .Admin .Admin, .Compras .Compras, .Ventas .Ventas {
-	            display: unset;
-            }
-        </style>
     </form>
-
-    <script>
-        var lastClass;
-        function enableMenu(type) {
-            var modal = $('#modalPhoneBook');
-            lastClass = type;
-            //resetForm();
-            switch (type) {
-                case 'Admin':
-                    modal.addClass(lastClass);
-                    break;
-                case 'Ventas':
-                    modal.addClass(lastClass);
-                    break;
-                case 'Compras':
-                    modal.addClass(lastClass);         
-                    break;
-            }
-        }
-        /*function resetForm() {            
-            document.getElementById('action').value = "";
-            document.getElementById('txt_IDPhoneBook').value = "";
-            document.getElementById('txt_nameE').value = "";
-            document.getElementById('txt_extE').value = "";
-            document.getElementById('txt_cellPhoneE').value = "";
-            document.getElementById('txt_skypeE').value = "";
-            document.getElementById('txt_emailE').value = "";
-            document.getElementById('txt_departamentE').value = "";
-        }*/
-     </script>
 </body>
 </html>
