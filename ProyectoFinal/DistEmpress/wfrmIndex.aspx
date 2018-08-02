@@ -138,10 +138,7 @@
     
 <body>
     <form id="form1" runat="server">
-     <!-- CONTENEDOR -->
-        <section id="contenedor">
-
-            <!-- ENCABEZADO -->
+           <!-- ENCABEZADO -->
             <header>
                 <article class="logo">
                     <section id="logo" class="fadeIn">
@@ -177,8 +174,8 @@
        
             
             <%-- cuerpo --%>
-                <section class="cuerpo">
-            <table align="center" >
+            <section class="cuerpo">
+            <table style="text-align:center" >
                 <tr>
                     <td class="auto-style24">&nbsp;</td>
                     <td class="auto-style7">&nbsp;</td>
