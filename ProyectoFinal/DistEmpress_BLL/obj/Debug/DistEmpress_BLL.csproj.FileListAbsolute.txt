@@ -27,6 +27,19 @@ C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
 C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb
+<<<<<<< HEAD
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.pdb
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
+C:\Users\Carlos\Desktop\GitHub\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb
+=======
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.dll
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.pdb
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.dll
@@ -38,3 +51,4 @@ C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpres
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
 C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb
+>>>>>>> 6650559ab8230b393b1b872575eae673bc7f583b

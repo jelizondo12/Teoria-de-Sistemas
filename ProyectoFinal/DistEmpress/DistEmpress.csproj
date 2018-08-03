@@ -139,6 +139,7 @@
     <Content Include="imagenes\search.png" />
     <Content Include="imagenes\shopping-cart.png" />
     <Content Include="imagenes\user.png" />
+    <Content Include="menu\footer.txt" />
     <Content Include="menu\topmenu.txt" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

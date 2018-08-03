@@ -29,19 +29,18 @@
     </style>
 </head>
 
-<body>
-    
+<body> 
     <form id="form1" runat="server">
         <section id="contenedor" class="auto-style17">
             <%--encabezdo--%>
             <header>
                 <article class="logo">
                     <section id="logo" class="fadeIn">
-                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center">
+                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center"/>
                     </section>
                 </article>
             </header>
-                    <%-- menu --%>
+            <%-- menu --%>
             <blockquote id="menu">
                 <nav id="primary_nav_wrap" class="auto-style156">
                     <ul class="auto-style157">
@@ -85,23 +84,20 @@
             </blockquote>            
             <br />
             <%--Cuerpo--%>
-            <br />
-        
-            
-            <div id="cuerpo" class="auto-style1" style="top: 100px"><br>
+            <div>
+            <blockquote id="cuerpo" class="auto-style1">
+                <br/>
                     <h1><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/report.png" Width="50px" />&nbsp; Reportes</h1>
-                <br />
-                <br />
                 <br />
                 <table class="auto-style4">
                     <tr>
-                        <td style="top: 200 px">
+                        <td>
                             <asp:Label ID="Label1" runat="server" Text="Buscar:"></asp:Label>
                         </td>
-                        <td style="top: 200 px">
+                        <td>
                             <asp:TextBox ID="txt_buscar" runat="server" Height="20px" Width="200px"></asp:TextBox>
                         </td>
-                        <td style="top: 200 px">
+                        <td>
                             <asp:DropDownList ID="ddl_opcion" runat="server" Height="20px" Width="200px">
                                 <asp:ListItem>Seleccione</asp:ListItem>
                                 <asp:ListItem>Clientes</asp:ListItem>
@@ -113,7 +109,7 @@
                                 <asp:ListItem>Empleados</asp:ListItem>
                             </asp:DropDownList>
                         </td>
-                        <td style="top: 200 px">
+                        <td>
                             <asp:ImageButton ID="ibtnBuscar" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/loupe.png" OnClick="ibtnBuscar_Click" Width="50px" />
                         </td>
                     </tr>
@@ -139,14 +135,11 @@
                 </table>
                 <br />
                 <asp:Label ID="lbl_mensaje" runat="server" Text=""></asp:Label>
+            </blockquote>
+            <%-- pie de página --%>
+         <!--#include virtual="/menu/footer.txt" -->
             </div>
-        </section>
-        <%-- pie de página --%>
-        <footer id="pie">
-            <br />
-            <h6 class="auto-style3">Programacion IV -III Cuatrimestre  UAM &COPY 2017</h6>
-            <h5 class="auto-style19">Proyecto Final</h5>
-        </footer>
+        </section>  
     </form>
 </body>
 </html>

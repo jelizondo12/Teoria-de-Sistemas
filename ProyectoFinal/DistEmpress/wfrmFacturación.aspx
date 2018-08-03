@@ -225,10 +225,7 @@
             </div>
         </section>
         <%-- pie de página --%>
-        <footer id="pie">
-            <h6 class="auto-style16">Programacion IV -III Cuatrimestre  UAM &COPY 2017</h6>
-            <h5 class="auto-style19">Proyecto Final</h5>
-        </footer>
+         <!--#include virtual="/menu/footer.txt" -->
     </form>
 </body>
 </html>
