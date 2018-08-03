@@ -126,15 +126,6 @@
             </section> 
     </form>
     <%--    p ie de pagina --%>
-      <footer>
-        <article>
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1 class="auto-style1"> Programación IV-III Cuatrimestre UAM &COPY 2017</h1>
-            <h2>Proyecto Final</h2>
-        </article>
-    </footer>
+       <!--#include virtual="/menu/footer.txt" -->
 </body>
 </html>

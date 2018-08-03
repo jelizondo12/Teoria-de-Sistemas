@@ -25,8 +25,8 @@ namespace DistEmpress
             {
                 Security usuario = new Security();
 
-                usuario.Nombre_Usuario = txt_usuario.Text.Trim();
-                usuario.clave = txt_clave.Text.Trim();
+                usuario.Nombre_Usuario = inptxt_usuario.Value.Trim();
+                usuario.clave = inptxt_clave.Value.Trim();
 
                 List<sp_Proyecto_VerificarSesion_Result> resultados = Logica.VerificarSesion(usuario);
 
@@ -75,7 +75,7 @@ namespace DistEmpress
             try
             {
                 //Verifica que los campos  usuarios y clave 
-                if (this.txt_usuario.Text.Trim().Length == 0)
+                if (this.inptxt_usuario.Value.Trim().Length == 0)
                 {
                     Response.Write("<script language=javascript>alert('Debe ingresar un usuario valido para enviar su contraseña al correo que esta registrado en el sistema');</script>");
                 }
@@ -83,7 +83,7 @@ namespace DistEmpress
                 {
                     Security usuario = new Security();
 
-                    usuario.Nombre_Usuario = txt_usuario.Text.Trim();
+                    usuario.Nombre_Usuario = inptxt_usuario.Value.Trim();
 
                     List<sp_Proyecto_VerificarSesion_Result> r = Logica.ObenerUsuarios(usuario);
 

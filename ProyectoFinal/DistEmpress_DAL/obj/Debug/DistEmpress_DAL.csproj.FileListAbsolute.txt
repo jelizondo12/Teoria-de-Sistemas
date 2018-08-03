@@ -3,21 +3,12 @@ C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_D
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.csprojResolveAssemblyReference.cache
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.dll
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.pdb
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.dll
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.pdb
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.dll
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.dll
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.pdb
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.xml
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.csprojResolveAssemblyReference.cache
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.dll
-C:\Users\Carlos\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.pdb
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.dll
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.pdb
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.dll
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.dll
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.pdb
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.xml
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.csprojResolveAssemblyReference.cache
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.dll
-C:\Users\Carlos\Desktop\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\DistEmpress_DAL.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\Entidades.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\bin\Debug\EntityFramework.xml
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.csprojResolveAssemblyReference.cache
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_DAL\obj\Debug\DistEmpress_DAL.pdb
