@@ -250,12 +250,7 @@
 
 </head>
 <body style="height: 199px">
-    <form id="form1" runat="server">
 
-        <%-- contenerdor --%>
-        <section id="contenedor">
-
-            <%--encabezdo--%>
             <header>
                 <article class="logo">
                     <section id="logo" class="fadeIn">
@@ -264,6 +259,8 @@
                 </article>
             </header>
             <%-- menu --%>
+       <form id="form1" runat="server">
+        <section id="contenedor">
             <blockquote id="menu">
                 <nav id="primary_nav_wrap" class="auto-style156">
                     <ul class="auto-style157">
