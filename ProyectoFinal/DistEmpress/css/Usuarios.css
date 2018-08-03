@@ -4,65 +4,30 @@
 }
 
 body{
-	background-color: #000;	
-	margin-top:0px;	
+	background-color: white;	
 }
 
-#contenedor{
+/*#contenedor{
 	width:1100px;
 	margin:0 auto;
 	background-color:#000;
+}*/
 
-}
-
-header{
-	width: 1100px;
-	height: 200px;
-	left: 0px;
-	top: 0px;
-    color:#fff;
-	font-family:'Century Gothic';
-	font-size: 36px;
-	text-align: center;
-	font-weight: normal;
-	line-height:180px;
-	overflow: hidden;
-	background-color:#000;
-}
-
-footer{
-	width: 1100px;
-	height: 150px;
-	color:#CCCCCC;
+/*.footer{
+	width: auto;
+	height: auto;
 	font-family: 'Century Gothic';
 	font-size: 24px;
 	text-align: center;
 	font-weight: normal;
-	background-color:#000;
-    /*margin-left:300px;
-    margin-right:300PX;*/
-}
+	background-color:white;
+}*/
 
-#table{
+/*#table{
     align-content:center;
-    /*height : 250px;
-    width: 250px;*/
     margin-left: 100px;
     font-weight:normal;
     font-family:'Century Gothic';
         border-radius:15PX;
-}
-
-h1{
-	font-family: 'Century Gothic';
-	font-size: 25px;
-	font-weight: bold;
-}
-
-h2{
-	font-family: 'Century Gothic';
-	font-size: 15px;
-	font-weight: bold;
-    text-align:center;
-}
+}*/
 
