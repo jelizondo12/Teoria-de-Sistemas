@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrmInicioSesion.aspx.cs" Inherits="DistEmpress.wfrmInicioSesion" %>
+﻿<%@ Page EnableEventValidation="false" Language="C#" AutoEventWireup="true" CodeBehind="wfrmInicioSesion.aspx.cs" Inherits="DistEmpress.wfrmInicioSesion" %>
 
 <%@ Register Src="wcuInicioSesion.ascx" TagName="wcuInicioSesion" TagPrefix="uc1" %>
 <%@ Register Src="~/wcuiniciosesion.ascx" TagPrefix="uc2" TagName="wcuiniciosesion" %>

@@ -16,10 +16,12 @@ namespace DistEmpress
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+            if (!Page.IsPostBack)
+            {
+            }
         }
 
-        protected void btn_igresar_Click(object sender, ImageClickEventArgs e)
+        protected void btn_igresar_Click(object sender, EventArgs e)
         {
             try
             {
