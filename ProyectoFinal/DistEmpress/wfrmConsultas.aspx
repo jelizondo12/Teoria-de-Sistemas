@@ -25,6 +25,7 @@
         .auto-style4 {
             width:800px;
             height:800px;
+            text-align: center;
         }
          .auto-style8 {
             text-align: center;
@@ -35,14 +36,6 @@
 <body> 
     <form id="form1" runat="server">
         <section id="contenedor">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="fadeIn">
-                        
-                    </section>
-                </article>
-            </header>
             <%-- menu --%>
             <header>
                 <div class="menu_bar">
@@ -68,8 +61,7 @@
             </header>
 
             <%--Cuerpo--%>
-            <div>
-            <blockquote id="cuerpo" class="auto-style1">
+            <div id="cuerpo" class="auto-style1">
                 <br/>
                     <h1><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/report.png" Width="50px" />&nbsp; Reportes</h1>
                 <br />
@@ -119,7 +111,6 @@
                 </table>
                 <br />
                 <asp:Label ID="lbl_mensaje" runat="server" Text=""></asp:Label>
-            </blockquote>
             <%-- pie de página --%>
          <!--#include virtual="/menu/footer.txt" -->
             </div>
