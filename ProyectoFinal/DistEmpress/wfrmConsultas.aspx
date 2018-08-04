@@ -34,7 +34,7 @@
 
 <body> 
     <form id="form1" runat="server">
-        <section id="contenedor">
+        <section id="cuerpo">
             <%--encabezdo--%>
             <header>
                 <article class="logo">

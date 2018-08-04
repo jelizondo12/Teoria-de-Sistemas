@@ -11,6 +11,7 @@
     <link href="css/menu.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/main.js"></script>
+
     <style type="text/css">
         .auto-style1 {
             text-align: center;
@@ -113,8 +114,8 @@
 </head>
 
 <body>
-    <form class="seccion" id="form1" runat="server">
-        
+    <form  id="form1" runat="server">
+      <section id="contenedor">
         <header>
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menú</a>
@@ -138,8 +139,8 @@
             </nav>
         </header>
 
-        <section align="center">
-            <table class="cuerpo" align="center">
+ 
+            <table style="margin-left: 100px">
                 <tr>
                     <td class="auto-style24">&nbsp;</td>
                     <td class="auto-style7">&nbsp;</td>
@@ -222,11 +223,12 @@
                     <td class="auto-style25">&nbsp;</td>
                 </tr>
             </table>
-        </section>
+
 
         <div class="footer">
             <!--#include virtual="/menu/footer.txt" -->
         </div>
+     </section>
     </form>
 </body>
 </html>

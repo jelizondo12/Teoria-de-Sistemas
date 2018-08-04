@@ -122,6 +122,7 @@
                             <asp:RegularExpressionValidator ID="rev_correo" runat="server" ControlToValidate="txt_correo" ErrorMessage="Campo correo electronico debe de contar con numeros, letras y @" ForeColor="#CC0000" ValidationExpression="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" ValidationGroup="Modificar_Registrar">*</asp:RegularExpressionValidator>
                         </td>
                     </tr>
+
                     <tr>
                         <td class="auto-style167">&nbsp;</td>
                         <td class="auto-style140"></td>
@@ -131,6 +132,7 @@
                         <td class="auto-style143"></td>
                         <td class="auto-style138"></td>
                     </tr>
+
                     <tr>
                         <td class="auto-style162">&nbsp;</td>
                         <td class="auto-style119">Segundo Apellido:</td>
@@ -149,10 +151,9 @@
                             <asp:RequiredFieldValidator ID="rfv_direccion" runat="server" ControlToValidate="txt_direccion" ErrorMessage="Campo dirección requerida" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
+
                     <tr>
-
                         <td class="auto-style167">&nbsp;</td>
-
                         <td class="auto-style140"></td>
                         <td class="auto-style140"></td>
                         <td class="auto-style137"></td>
@@ -160,6 +161,7 @@
                         <td class="auto-style147"></td>
                         <td class="auto-style148"></td>
                     </tr>
+
                     <tr>
 
                         <td class="auto-style162">&nbsp;</td>
@@ -182,6 +184,7 @@
                         </td>
                         <td class="auto-style126">&nbsp;</td>
                     </tr>
+                        
                     <tr>
                         <td class="auto-style165">&nbsp;</td>
                         <td class="auto-style139"></td>
@@ -189,9 +192,7 @@
                         <td class="auto-style137"></td>
                         <td class="auto-style142"></td>
                         <td class="auto-style143"></td>
-
                         <td class="auto-style138"></td>
-
                     </tr>
 
                     <tr>

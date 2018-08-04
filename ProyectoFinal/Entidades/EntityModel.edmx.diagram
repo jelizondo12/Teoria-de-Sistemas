@@ -37,6 +37,7 @@
         <AssociationConnector Association="NorthwindModel.FK_Security_ROL" ManuallyRouted="false" />
         <AssociationConnector Association="NorthwindModel.FK_Security_USERS" ManuallyRouted="false" />
         <AssociationConnector Association="NorthwindModel.EmployeeTerritories" ManuallyRouted="false" />
+        <AssociationConnector Association="NorthwindModel.FK_IDROL" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

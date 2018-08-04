@@ -4,15 +4,29 @@
 }
 
 body{
-	background-color: black;
+	 width:auto;
+    height:auto;
+    background-color: #000;
+    margin-top: 0px;
+    color: #CCCCCC;
+    font-family: 'Century Gothic';
+    align-content: center;
 }
 
 .seccion{
     object-position:center;
     align-content:center;
     position:relative;
+    align-items:center;
 }
 
+#contenedor{
+    width:1100px;
+    height:auto;
+	margin:0 auto;
+	background-color:white;
+    position:center;
+}
 .cuerpo {
     position:center;
     background-color: lightgray;
