@@ -1,35 +1,33 @@
 ﻿* {
 	padding:0;
 	margin:0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 body{
-	background-color:black;	
+	background-color: black;
+}
+
+.seccion{
+    object-position:center;
+    align-content:center;
+    position:relative;
 }
 
 .cuerpo {
-    width:auto;
-    height:auto;
+    position:center;
     background-color: lightgray;
     border-color: lightgray;
     font-family: 'Century Gothic';
     border: solid;
-    margin-left:100px;
-    margin-right:100px;
+    margin-left:200px;
     border-radius: 15px;
     text-align: center;
-    position: center;
-    align-content: center;
     margin-left:20px;
     margin-right:20px;
     margin-top:20px;
     margin-bottom:20px;
 }
 
-/* PIE DE PAGINA */
 .footer{
 	width:auto;
 	height: auto;

@@ -13,49 +13,40 @@ namespace DistEmpress {
     public partial class wfrmRegistroUsuario {
         
         /// <summary>
-        /// Control form1.
+        /// Control Li1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li1;
         
         /// <summary>
-        /// Control usuario.
+        /// Control Li2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl usuario;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li2;
         
         /// <summary>
-        /// Control ingresoProducto.
+        /// Control Li3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ingresoProducto;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li3;
         
         /// <summary>
-        /// Control ingresoPedido.
+        /// Control Li4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ingresoPedido;
-        
-        /// <summary>
-        /// Control consultas.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl consultas;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Li4;
         
         /// <summary>
         /// Control Image2.

@@ -12,6 +12,7 @@
     <link href="css/login.css" rel="stylesheet" />
    
      <title>LOGIN</title>
+
     <style type="text/css">
         .auto-style8 {
             text-align: center;
@@ -20,7 +21,6 @@
 
         .auto-style11 {
             text-align: center;
-            text-shadow: initial;
             font-family: "Myanmar Text";
             font-size: 16px;
             color: #999999;
