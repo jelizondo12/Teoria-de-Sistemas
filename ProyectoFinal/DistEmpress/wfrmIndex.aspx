@@ -120,8 +120,7 @@
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menú</a>
             </div>
-
-            <nav class="auto-style8">
+           <nav class="auto-style8">
                 <ul>
                     <li><a href="wfrmIndex.aspx">Inicio</a></li>
                     <li id="usuario" runat="server">
@@ -138,9 +137,8 @@
                 </ul>
             </nav>
         </header>
-
  
-            <table style="margin-left: 100px">
+            <table class="cuerpo" style="border-color:black">
                 <tr>
                     <td class="auto-style24">&nbsp;</td>
                     <td class="auto-style7">&nbsp;</td>
@@ -223,8 +221,6 @@
                     <td class="auto-style25">&nbsp;</td>
                 </tr>
             </table>
-
-
         <div class="footer">
             <!--#include virtual="/menu/footer.txt" -->
         </div>
