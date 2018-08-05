@@ -115,7 +115,7 @@
 
 <body>
     <form  id="form1" runat="server">
-      <section id="contenedor">
+      <section>
         <header>
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menú</a>

@@ -37,7 +37,7 @@
         <%---------------------------------------------------------------------------------------------------------------------------------------------------------------%>
         <footer>
             <article>
-                <h1 class="auto-style11">Teoria de Sistemas II Cuatrimestre UAM &COPY 2018</h1>
+    <!--#include virtual="/menu/footer.txt" -->
             </article>
         </footer>
     </form>

@@ -7,8 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Facturación</title>
     <link href="css/Facturas.css" rel="stylesheet" />
-    <link href="css/menu.css" rel="stylesheet" />
-    <style type="text/css">
+     <link href="css/menu.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
+ 
+       <style type="text/css">
         .auto-style1 {
             overflow: auto;
             height: 216px;
@@ -88,17 +91,7 @@
 
 <body>
     <form id="form1" runat="server">
-        <section id="contenedor" class="auto-style17">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="fadeIn">
-                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center">
-                    </section>
-                </article>
-            </header>
-
-            <%-- menu --%>
+        <section class="auto-style17">
             <header>
                 <div class="menu_bar">
                     <a href="#" class="bt-menu">Menú</a>
@@ -122,13 +115,7 @@
                 </nav>
             </header> 
 
-            <%--Cuerpo--%>
-            <br />
-            <br />
-            <br />
-            <br />
-            <div>
-                <section id="cuerpo" class="auto-style18"><br />
+                <section class="auto-style18"><br />
                     <h1>
                         <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/invoice.png" Height="50px" ImageAlign="Middle" Width="50px" />&nbsp;&nbsp;&nbsp; Facturación de pedidos</h1>
                     <br />
@@ -201,12 +188,13 @@
                             </td>
                         </tr>
                     </table>
-                    <br />
+
                 </section>
-            </div>
+
+             <div class="footer">
+            <!--#include virtual="/menu/footer.txt" -->
+        </div>
         </section>
-        <%-- pie de página --%>
-         <!--#include virtual="/menu/footer.txt" -->
     </form>
 </body>
 </html>

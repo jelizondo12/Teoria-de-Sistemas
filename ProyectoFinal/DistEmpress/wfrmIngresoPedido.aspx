@@ -8,6 +8,8 @@
     <title>Ingreso Pedidos</title>
     <link href="css/Pedidos.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
 
     <style type="text/css">
         .auto-style1 {
@@ -130,7 +132,6 @@
             height: 34px;
         }
     </style>
-
 </head>
 
 <body>
@@ -161,16 +162,12 @@
             </header>
 
             <%--Cuerpo--%>
-            <br />
-            <br />
             <div>
                 <section id="pedido">
-                    <br />
+
                     <h1 class="auto-style7">
                         <asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/invoice.png" Width="50px" />&nbsp;&nbsp;<span class="auto-style17">Ingreso de Pedidos</span></h1>
-                    <br />
-                    <br />
-                    <br />
+
                     <asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label>&nbsp;&nbsp;
                     <asp:Label ID="lbl_numero_factura" runat="server" Text=""></asp:Label>
                     &nbsp;<br />
@@ -328,9 +325,10 @@
                     </section>
 
                 </section>
-                <%-- pie de página --%>
-                 <!--#include virtual="/menu/footer.txt" -->
             </div>
+              <div class="footer">
+            <!--#include virtual="/menu/footer.txt" -->
+        </div>
         </section>
     </form>
 </body>

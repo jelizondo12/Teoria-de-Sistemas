@@ -1,17 +1,17 @@
-﻿*{
+﻿/**{
 	margin: 0px;
 	padding: 0px; 
-}
+}*/
 
-body {
+/*body {
     background-color: #000;
     margin-top: 0px;
     color: #CCCCCC;
     font-family: 'Century Gothic';
     align-content: center;
-}
+}*/
 
-#cuerpo{
+/*#cuerpo{
    width:auto;
     height:auto;
     background-color: lightgray;
@@ -28,8 +28,9 @@ body {
     margin-right:20px;
     margin-top:20px;
     margin-bottom:20px;
-}
+}*/
 
+/*
 #contenedor{
     width:1100px;
 	margin:0 auto;
@@ -51,25 +52,24 @@ footer{
 	overflow: hidden;
 	background-color:#000;
 }
-
+*/
+/*
 header{
 	width: 1100px;
 	height: 150px;
-	/*left: 0px;
+	left: 0px;
 	top: 0px;
     color:#CCCCCC;
 	font-family:'Century Gothic';
 	font-size: 36px;
 	text-align: center;
 	font-weight: normal;
-	line-height:180px;*/
+	line-height:180px;
 	overflow: hidden;
 	background-color:#000;
     position:center;
     align-items:center;
 }
-
-
 
 table{
     align-content:center;
@@ -95,6 +95,7 @@ h2{
 	font-weight: bold;
      text-align: center;
      height:20px;
-}
+}*/
+
 
 

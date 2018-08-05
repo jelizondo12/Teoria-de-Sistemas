@@ -94,7 +94,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <asp:Button class="auto-style7" type="button" OnClick="btn_igresar_Click" runat="server" Text="Login" Height="80px"/>
+                            <asp:Button class="auto-style7" type="button" OnClick="btn_igresar_Click" runat="server" Text="Login" Height="80px" ID="btn_login"/>
                         </td>
                     </tr>
                     <tr>

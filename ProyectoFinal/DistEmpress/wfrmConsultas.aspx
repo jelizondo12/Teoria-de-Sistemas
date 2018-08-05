@@ -8,6 +8,8 @@
     <title>Reportes</title>
     <link href="css/consultas.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+
     <style type="text/css">
         .auto-style1 {
             text-align: center;
@@ -34,16 +36,8 @@
 
 <body> 
     <form id="form1" runat="server">
-        <section id="cuerpo">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="fadeIn">
-                        
-                    </section>
-                </article>
-            </header>
-            <%-- menu --%>
+        <section>
+         
             <header>
                 <div class="menu_bar">
                     <a href="#" class="bt-menu">Menú</a>
@@ -67,7 +61,6 @@
                 </nav>
             </header>
 
-            <%--Cuerpo--%>
             <div>
             <blockquote id="cuerpo" class="auto-style1">
                 <br/>

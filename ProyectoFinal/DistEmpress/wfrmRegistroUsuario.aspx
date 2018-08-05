@@ -6,11 +6,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Registro de Usuarios</title>
-    <link href="css/Usuarios.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
-
-    
-
+    <link href="css/Usuarios.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -38,13 +37,14 @@
             </nav>
         </header>
 
-        <section id="contenedor">
+        <section>
             <div>
                 <table>
                     <tr>
                         <td colspan="7">
                             <asp:Image ID="Image2" runat="server" ImageAlign="Middle" ImageUrl="~/imagenes/id-card.png" />&nbsp;&nbsp;&nbsp; <span class="auto-style14"><span>&nbsp;Registro de Usuarios</span></span></td>
                     </tr>
+
                     <tr>
                         <td class="auto-style160">&nbsp;</td>
                         <td class="auto-style92">Identificación:</td>
@@ -66,6 +66,7 @@
                             <asp:RequiredFieldValidator ID="rfv_fexhaNacimineto" runat="server" ControlToValidate="txt_fechaNacmiento" ErrorMessage="Debe ingresar su fecha de nacimiento" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                         </td>
                     </tr>
+
                     <tr>
                         <td class="auto-style161">&nbsp;</td>
                         <td class="auto-style149"></td>
@@ -75,16 +76,13 @@
                         <td class="auto-style152"></td>
                         <td class="auto-style153"></td>
                     </tr>
+
                     <tr>
                         <td class="auto-style162">&nbsp;</td>
                         <td class="auto-style119">Nombre:</td>
-                        <td class="auto-style169">
-                            <asp:TextBox ID="txt_nombre" runat="server" Height="20px" Width="200px"></asp:TextBox>
-                        </td>
-                        <td class="auto-style121">
-                            <asp:RequiredFieldValidator ID="rfv_nombre" runat="server" ControlToValidate="txt_nombre" ErrorMessage="Campo nombre requerido" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txt_nombre" ErrorMessage="El nombre debe ser solamente letras" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar" ValidationExpression="^[a-zA-Z]+$">*</asp:RegularExpressionValidator>
-                        </td>
+                        <td class="auto-style169"><asp:TextBox ID="txt_nombre" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
+                        <td class="auto-style121"><asp:RequiredFieldValidator ID="rfv_nombre" runat="server" ControlToValidate="txt_nombre" ErrorMessage="Campo nombre requerido" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txt_nombre" ErrorMessage="El nombre debe ser solamente letras" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar" ValidationExpression="^[a-zA-Z]+$">*</asp:RegularExpressionValidator></td>
                         <td class="auto-style124">Número de Teléfono</td>
                         <td class="auto-style125">
                             <asp:TextBox ID="txt_telefono" runat="server" Height="20px" Width="200px"></asp:TextBox>
@@ -94,6 +92,7 @@
                             <asp:RegularExpressionValidator ID="rev_telefono" runat="server" ErrorMessage="El teléfono solamente deben ser números con una extensión de 9 digitos" ForeColor="#CC0000" ValidationGroup="Modificar_Registrar" ValidationExpression="^\d{8}$" ControlToValidate="txt_telefono">*</asp:RegularExpressionValidator>
                         </td>
                     </tr>
+
                     <tr>
                         <td class="auto-style166">&nbsp;</td>
                         <td class="auto-style150"></td>
@@ -103,6 +102,7 @@
                         <td class="auto-style152"></td>
                         <td class="auto-style153"></td>
                     </tr>
+
                     <tr>
                         <td class="auto-style162">&nbsp;</td>
                         <td class="auto-style119">Primer Apellido:</td>
@@ -163,9 +163,7 @@
                     </tr>
 
                     <tr>
-
                         <td class="auto-style162">&nbsp;</td>
-
                         <td class="auto-style119">Tipo de&nbsp;usuario:</td>
                         <td class="auto-style154">
                             <asp:DropDownList ID="Drop_tipoUsuario" runat="server" Height="30px" Width="200px">
@@ -184,7 +182,7 @@
                         </td>
                         <td class="auto-style126">&nbsp;</td>
                     </tr>
-                        
+
                     <tr>
                         <td class="auto-style165">&nbsp;</td>
                         <td class="auto-style139"></td>

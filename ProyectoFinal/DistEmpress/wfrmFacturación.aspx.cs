@@ -56,7 +56,8 @@ namespace DistEmpress
             }
             catch (Exception ex)
             {
-                throw ex; //MessageBox.Show(ex.Message);
+                throw ex;
+                //MessageBox.Show(ex.Message);
             }
         }
         protected void ib_agregar_Click(object sender, ImageClickEventArgs e)
