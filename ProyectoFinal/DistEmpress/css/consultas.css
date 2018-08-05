@@ -4,8 +4,6 @@
 }
 
 body {
-    width:auto;
-    height:auto;
     background-color: #000;
     margin-top: 0px;
     color: #CCCCCC;
@@ -15,7 +13,6 @@ body {
 
 #contenedor{
     width:1100px;
-    height:auto;
 	margin:0 auto;
 	background-color:#000;
     position:center;
@@ -25,24 +22,25 @@ body {
   border:solid;
   border-radius:15px;
   border-color:#cccccc;
-  height:auto;
   width:1000px;
-  margin-top:200px;
+
 }
 
 header{
 	width: 1100px;
-	height: auto;
-	left: 0px;
+	height:150px;
+	/*left: 0px;
 	top: 0px;
     color:#CCCCCC;
 	font-family:'Century Gothic';
 	font-size: 36px;
 	text-align: center;
 	font-weight: normal;
-	line-height:180px;
-	overflow: hidden;
+	line-height:180px;*/
+    overflow: hidden;
 	background-color:#000;
+	position:center;
+    align-items:center;
 }
 
 #pie{
@@ -60,7 +58,6 @@ align-content:center;
 }
 
 #div_grid{
-    margin-top:50px;
     margin-bottom:50px;
     height:500px;
     width:1000px;

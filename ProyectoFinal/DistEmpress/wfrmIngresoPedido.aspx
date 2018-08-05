@@ -39,9 +39,13 @@
             text-align: center;
         }
 
-        .auto-style8 {
+        .auto-style14 {
             width: 286px;
             text-align: left;
+        }
+
+        .auto-style8 {
+            text-align: center;
         }
 
         .auto-style9 {
@@ -131,16 +135,7 @@
 
 <body>
     <form id="form1" runat="server">
-        <section id="contenedor" class="auto-style16">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="auto-style7">
-                        <asp:Image ID="Image2" runat="server" ImageUrl="~/imagenes/logo.png" ImageAlign="Middle" />
-                    </section>
-                </article>
-            </header>
-            
+        <section id="contenedor" class="auto-style16">       
             <%-- menu --%>
             <header>
                 <div class="menu_bar">
@@ -209,7 +204,7 @@
                     <section id="tabla">
                         <table class="auto-style2" aria-orientation="horizontal" style="height: 800px; width: 1000px">
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
@@ -220,7 +215,7 @@
                                     <asp:ImageButton ID="ib_limpiar" runat="server" Height="50px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label1" runat="server" Text="Id del Producto: "></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:TextBox ID="txt_idproducto" runat="server" Height="20px" Width="200px"></asp:TextBox>
@@ -230,21 +225,21 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
                                 <td class="auto-style12">
                                     <asp:Label ID="lbl_productname" runat="server" Text=""></asp:Label></td>
                                 <td class="auto-style18">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label3" runat="server" Text="Categoria: "></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:Label ID="lbl_category" runat="server" Text=""></asp:Label></td>
                                 <td class="auto-style18">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label4" runat="server" Text="Cantidad: "></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:TextBox ID="txt_cantidad" runat="server" Height="20px" Width="200px" TextMode="Number"></asp:TextBox>
@@ -254,21 +249,21 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label5" runat="server" Text="Precio Unitario: "></asp:Label></td>
                                 <td class="auto-style12">
                                     <asp:Label ID="lbl_unitprice" runat="server" Text=""></asp:Label></td>
                                 <td class="auto-style18">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label6" runat="server" Text="Fecha del Pedido:"></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:Label ID="lbl_fechapedido" runat="server" Text=""></asp:Label></td>
                                 <td class="auto-style18">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td class="auto-style8">
+                                <td class="auto-style14">
                                     <asp:Label ID="Label7" runat="server" Text="Usuario: "></asp:Label></td>
                                 <td class="auto-style13">
                                     <asp:DropDownList ID="ddl_usuario" runat="server" Height="20px" Width="200px">

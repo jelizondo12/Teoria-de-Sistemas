@@ -88,19 +88,10 @@
 
         </style>
 </head>
-<body>
+<body>   
+    <form id="form1" runat="server">
         <%-- contenerdor --%>
         <section id="contenedor">
-    <form id="form1" runat="server">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="fadeIn">
-                        <img src="imagenes/logo.PNG" alt="Logo Empresarial" style="text-align: center"/>
-                    </section>
-                </article>
-            </header>
-
             <%-- menu --%>
             <header>
                 <div class="menu_bar">
@@ -127,8 +118,7 @@
            
             <%--Cuerpo--%>
             <br />
-            <div>
-                <section>
+            <div id="cuerpo">
                     <table id="table" class="auto-style15" style="border-style: solid; border-color: #CCCCCC; ">
                         <tr>
                             <td class="auto-style40" colspan="5">&nbsp;</td>
@@ -341,12 +331,11 @@
                             </td>
                         </tr>
                         </table>
-                </section>
             </div>
         <br />
           <!--#include virtual="/menu/footer.txt" -->
-    </form>
-     </section>
+            </section>
+    </form>  
 </body>
 </html>
 
