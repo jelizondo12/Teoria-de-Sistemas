@@ -116,29 +116,27 @@
 <body>
     <form  id="form1" runat="server">
       <section>
-          <div class="imagen">
-                <asp:Image ID="Image5" runat="server" ImageUrl="~/imagenes/logo.png"/>
-            </div>
         <header>
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menú</a>
             </div>
-           <nav class="auto-style8">
-                <ul>
-                    <li><a href="wfrmIndex.aspx">Inicio</a></li>
-                    <li id="usuario" runat="server">
-                        <a href="#">Usuario</a>
-                        <ul class="children">
-                            <li><a href="wfrmRegistroUsuario.aspx">Registro de Usuarios</a></li>
-                            <li><a href="wfrmRecuperacion_Clave.aspx">Recuperación Contraseña</a></li>
-                        </ul>
-                    </li>
-                    <li id="ingresoProducto" runat="server"><a href="wfrmIngresoProducto.aspx">Producto</a></li>
-                    <li id="ingresoPedido" runat="server"><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
-                    <li id="consultas" runat="server"><a href="wfrmConsultas.aspx">Reportes</a></li>
-                    <li><a href="wfrmInicioSesion.aspx">Cerrar Sesión</a></li>
-                </ul>
-            </nav>
+
+          		<nav class="auto-style8">
+			<ul id="usuario">
+				<li><a href="#">Inicio</a></li>
+				<li class="submenu" style="text-align:left">
+					<a href="#">Usuarios</a>
+					<ul class="children">
+						<li><a href="wfrmRegistroUsuario.aspx">Registro Usuarios</a></li>
+						<li><a href="wfrmRecuperacion_Clave.aspx">Recuperación de Contraseña</a></li>
+					</ul>
+				</li>
+				<li><a href="wfrmIngresoProducto.aspx">Productos</a></li>
+				<li><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
+                <li><a href="wfrmConsultas.aspx">Reportes</a></li>
+                <li><a href="wfrmInicioSesion.aspx">Cerrar Sesión</a></li>
+			</ul>
+		</nav>
         </header>
  
             <table class="cuerpo" style="border-color:black">
