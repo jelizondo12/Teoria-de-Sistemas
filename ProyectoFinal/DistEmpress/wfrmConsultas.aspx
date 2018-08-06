@@ -61,11 +61,8 @@
                 </nav>
             </header>
 
-            <div>
             <blockquote id="cuerpo" class="auto-style1">
-                <br/>
                     <h1><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/report.png" Width="50px" />&nbsp; Reportes</h1>
-                <br />
                 <table class="auto-style4">
                     <tr>
                         <td>
@@ -94,7 +91,6 @@
                         <td colspan="4">
                             <div id="div_grid" class="auto-style2">
                                 <asp:GridView ID="dgv_reportes" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="779px" ShowHeaderWhenEmpty="true" HorizontalAlign="Center">
-
                                     <AlternatingRowStyle BackColor="White" />
                                     <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
                                     <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
@@ -110,10 +106,10 @@
                         </td>
                     </tr>
                 </table>
-                <br />
                 <asp:Label ID="lbl_mensaje" runat="server" Text=""></asp:Label>
             </blockquote>
-            <%-- pie de página --%>
+
+            <div class="footer">
          <!--#include virtual="/menu/footer.txt" -->
             </div>
         </section>  
