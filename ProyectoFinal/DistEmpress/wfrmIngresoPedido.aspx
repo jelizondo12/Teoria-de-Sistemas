@@ -326,9 +326,9 @@
 
                 </section>
             </div>
-              <div class="footer">
+          
             <!--#include virtual="/menu/footer.txt" -->
-        </div>
+
         </section>
     </form>
 </body>

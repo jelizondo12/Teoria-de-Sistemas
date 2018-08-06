@@ -116,6 +116,9 @@
 <body>
     <form  id="form1" runat="server">
       <section>
+          <div class="imagen">
+                <asp:Image ID="Image5" runat="server" ImageUrl="~/imagenes/logo.png"/>
+            </div>
         <header>
             <div class="menu_bar">
                 <a href="#" class="bt-menu">Menú</a>
@@ -221,9 +224,9 @@
                     <td class="auto-style25">&nbsp;</td>
                 </tr>
             </table>
-        <div class="footer">
+
             <!--#include virtual="/menu/footer.txt" -->
-        </div>
+
      </section>
     </form>
 </body>

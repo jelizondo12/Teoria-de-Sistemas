@@ -1,5 +1,5 @@
-﻿<footer>
-		<article>
-			<h1 Teoría de Sistemas- II Cuatrimestre UAM &COPY 2018</h1>
+﻿<footer class="footer">
+		<article >
+			<h1> Teoría de Sistemas- II Cuatrimestre UAM &COPY 2018</h1>
 		</article>
 </footer>

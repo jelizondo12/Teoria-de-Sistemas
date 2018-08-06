@@ -16,10 +16,10 @@ namespace Entidades
     using System.Data.Objects.DataClasses;
     using System.Linq;
     
-    public partial class NorthwindEntities1 : DbContext
+    public partial class NorthwindEntities : DbContext
     {
-        public NorthwindEntities1()
-            : base("name=NorthwindEntities1")
+        public NorthwindEntities()
+            : base("name=NorthwindEntities")
         {
         }
     

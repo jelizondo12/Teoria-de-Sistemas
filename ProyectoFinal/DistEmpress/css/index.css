@@ -6,9 +6,7 @@
 body{
 	 width:auto;
     height:auto;
-    background-color: #000;
-    margin-top: 0px;
-    color: #CCCCCC;
+    background-color: black;
     font-family: 'Century Gothic';
     align-content: center;
 }
@@ -34,4 +32,5 @@ body{
 	background-color:white;
     font-family: 'Century Gothic';
 	font-weight: bold;
+    color: black;
 }
