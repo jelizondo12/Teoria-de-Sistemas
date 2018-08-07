@@ -6,6 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ingreso Pedidos</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link href="css/Pedidos.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -46,10 +47,6 @@
             text-align: left;
         }
 
-        .auto-style8 {
-            text-align: center;
-        }
-
         .auto-style9 {
             width: 124px;
             text-align: center;
@@ -82,14 +79,6 @@
             color: #0000FF;
         }
 
-        .auto-style16 {
-            width: 1085px;
-        }
-
-        .auto-style17 {
-            font-size: xx-large;
-        }
-
         .auto-style18 {
             width: 35px;
             text-align: center;
@@ -101,19 +90,15 @@
             text-align: center;
         }
 
-        .auto-style22 {
-            height: 138px;
-            margin-top: 36px;
-        }
-
         .auto-style24 {
             width:auto;
             margin-left:0px;
             margin-right:50px;
-            height: 500px;
+            height: auto;
             text-align: center;
             vertical-align:middle;
             position:center;
+            overflow: auto;
         }
         .auto-style25 {
             text-align: left;
@@ -136,19 +121,19 @@
 
 <body>
     <form id="form1" runat="server">
-        <section id="contenedor" class="auto-style16">       
-            <%-- menu --%>
+        <section>       
+
             <header>
                 <div class="menu_bar">
                     <a href="#" class="bt-menu">Menú</a>
                 </div>
 
-                <nav class="auto-style8">
+                <nav style="text-align:center">
                     <ul>
                         <li><a href="wfrmIndex.aspx">Inicio</a></li>
                         <li id="usuario" runat="server">
                             <a href="#">Usuario</a>
-                            <ul class="children">
+                            <ul class="children" style="text-align:left">
                                 <li><a href="wfrmRegistroUsuario.aspx">Registro de Usuarios</a></li>
                                 <li><a href="wfrmRecuperacion_Clave.aspx">Recuperación Contraseña</a></li>
                             </ul>
@@ -161,25 +146,17 @@
                 </nav>
             </header>
 
-            <%--Cuerpo--%>
             <div>
-                <section id="pedido">
+                <section class="cuerpo">
+                    <h1 class="h1"><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/invoice.png" Width="50px" />Ingreso de Pedidos</h1>
 
-                    <h1 class="auto-style7">
-                        <asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/invoice.png" Width="50px" />&nbsp;&nbsp;<span class="auto-style17">Ingreso de Pedidos</span></h1>
-
-                    <asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label>&nbsp;&nbsp;
+                    <asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label>
                     <asp:Label ID="lbl_numero_factura" runat="server" Text=""></asp:Label>
-                    &nbsp;<br />
-                    <br />
-                    &nbsp;<asp:Label ID="Label11" runat="server" Text="Cliente:"></asp:Label>&nbsp;&nbsp;<asp:DropDownList ID="ddl_clientes" runat="server" Height="20px" Width="200px">
-                    </asp:DropDownList>&nbsp;<asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" />
-                    <br />
-                    <br />
-                    <br />
+                    <asp:Label ID="Label11" runat="server" Text="Cliente:"></asp:Label><asp:DropDownList ID="ddl_clientes" runat="server" Height="20px" Width="200px">
+                    </asp:DropDownList><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" />
 
-                    <div id="divGrid" style="border-style: solid; border-color: #CCCCCC;" class="auto-style1">
-                        <div id="div_grid" class="auto-style24" style="overflow: auto; height: auto; width: auto;">
+                    <div class="div_grid2">
+                        <div>
                             <asp:GridView ID="dgv_inventario" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" ShowHeaderWhenEmpty="true" Width="96%" Height="207px">
                                 <AlternatingRowStyle BackColor="White" />
                                 <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
@@ -193,13 +170,12 @@
                                 <SortedDescendingHeaderStyle BackColor="#820000" />
                             </asp:GridView>
                         </div>
-
                     </div>
-                    <br />
-                    <h1 class="auto-style25">&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label8" runat="server" Text="Pedido de productos"></asp:Label></h1>
-                    <br />
-                    <section id="tabla">
-                        <table class="auto-style2" aria-orientation="horizontal" style="height: 800px; width: 1000px">
+
+                    <h1 class="auto-style25"> <asp:Label ID="Label8" runat="server" Text="Pedido de productos"></asp:Label></h1>
+
+                    <section>
+                        <table class="table">
                             <tr>
                                 <td class="auto-style14">
                                     <asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>

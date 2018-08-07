@@ -3,66 +3,56 @@
 	padding: 0px; 
 }
 
-/*body{
-	background-color: #000;	
-	margin-top:0px;	
+body{	
     color:#CCCCCC;
     font-family:'Century Gothic';
     align-content:center;
 }
 
-#contenedor{
-	width:1100px;
-	margin:0 auto;
-	background-color:#000;
-    position:center;
-}
-
-
 header{
-	width: 1100px;
-	height: 200px;
-	left: 0px;
-	top: 0px;
-    color:#CCCCCC;
-	font-family:'Century Gothic';
-	font-size: 36px;
-	text-align: center;
-	font-weight: normal;
+	width:auto;
+	height: auto;
 	line-height:180px;
 	overflow: hidden;
-	background-color:#000;
+    margin-top:50px;
 }
 
-footer{
+.footer{
+    margin-top:20px;
 	width: auto;
 	height: auto;
-	color:#CCCCCC;
 	font-family: 'Century Gothic';
-	font-size: 15px;
+	font-size: 12px;
 	text-align: center;
-	font-weight: bold;
-	background-color:#000;
-    align-content:center;
+	background-color:white;
+    color:black;
 }
 
-table{
-    align-content:center;
+.table{
+    border:solid;
+    border-color:black;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius:12px;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    text-align:center;
     height : 250px;
-    width: 250px;
-    margin-left: 200px;
-    margin-right:200px;
+    width: 570px;
+    margin-left:400px;
 }
 
-h1{
-	font-family: 'Century Gothic';
-	font-size: 25px;
+.h1{
+	font-family: 'Smile of the Ocean';
+	font-size: 50px;
 	font-weight: bold;
     text-align:center;
+    color:black;
+    vertical-align:middle;
 }
 
-h2{
+.h2{
 	font-family: 'Century Gothic';
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
-}*/
+    color:black;
+}

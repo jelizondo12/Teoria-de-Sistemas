@@ -6,37 +6,22 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Restablecer Contraseña</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link href="css/Clave.css" rel="stylesheet" />
-    <link href="css/menu.css" rel="stylesheet" />
 
     <style type="text/css">
         .auto-style1 {
             text-align: center;
-        }
-
-        .auto-style2 {
-            color: #CCCCCC;
+            font-size:20px;
         }
 
         .auto-style3 {
             color: #0000FF;
         }
 
-        .auto-style4 {
-            width: 750px;
-            height: 500px;
-            border-radius: 15px;
-            position: center;
-            vertical-align: middle;
-            align-content: center;
-        }
-
         .auto-style5 {
             text-align: left;
-        }
-
-        .auto-style7 {
-            font-size: xx-large;
+            color: black;
         }
 
         .auto-style9 {
@@ -53,23 +38,23 @@
             font-size: xx-large;
             text-align: left;
         }
+        .auto-style12 {
+            height: 51px;
+        }
     </style>
 </head>
 
-<body style="margin-bottom: 0px">
+<body>
     <form id="form1" runat="server">
         <header>
-            <article>
-            </article>
         </header>
 
-
         <blockquote>
-            <table style="text-align: right; border-left-style: solid; border-left-color: #CCCCCC; border-right-style: solid; border-right-color: #CCCCCC; border-top-style: ridge; border-top-color: #CCCCCC; border-bottom-style: solid; border-bottom-color: #CCCCCC;" class="auto-style4">
+            <table class="table">
                 <tr>
-                    <td colspan="4">
-                        <h1 class="auto-style2">
-                            <asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/recuperar.png" Width="50px" />&nbsp; <span class="auto-style7">Restablecer Contraseña</span></h1>
+                    <td colspan="4" class="auto-style12">
+                        <h1 class="h1">
+                            <asp:Image ID="Image1" runat="server" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/padlock.png" Height="50px"  />&nbsp; Restablecer Contraseña</h1>
                     </td>
                 </tr>
                 <tr>
@@ -111,21 +96,21 @@
                 </tr>
                 <tr>
                     <td class="auto-style1" colspan="4">
-                        <asp:Button ID="btn_realizar" runat="server" OnClick="Button1_Click" Text="Cambiar contraseña" Width="198px" />&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+                        <asp:Button ID="btn_realizar" runat="server" OnClick="Button1_Click" Text="Cambiar contraseña" Width="198px" Font-Names="Offerings" Font-Size="20px" Height="50px" />&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" Font-Names="Offerings" Font-Size="20px" Height="50px" Width="110px" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style1" colspan="3">
-                        <asp:Label ID="lbl_mensaje" runat="server" CssClass="auto-style3"></asp:Label>
+                        <asp:Label ID="lbl_mensaje" runat="server" CssClass="auto-style3" Font-Names="Offerings"></asp:Label>
                         <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" />
                     </td>
                 </tr>
             </table>
         </blockquote>
     </form>
-    <%--    p ie de pagina --%>
+
     <!--#include virtual="/menu/footer.txt" -->
 </body>
 </html>

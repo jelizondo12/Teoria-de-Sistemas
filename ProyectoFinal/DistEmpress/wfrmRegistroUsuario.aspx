@@ -6,6 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Registro de Usuarios</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link href="css/menu.css" rel="stylesheet" />
     <link href="css/Usuarios.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -19,7 +20,7 @@
                 <a href="#" class="bt-menu">Menú</a>
             </div>
 
-            <nav>
+            <nav style="text-align:center">
                 <ul>
                     <li><a href="wfrmIndex.aspx">Inicio</a></li>
                     <li id="Li1" runat="server">
@@ -39,12 +40,17 @@
 
         <section>
             <div>
-                <table>
+                <table class="table">
                     <tr>
-                        <td colspan="7">
-                            <asp:Image ID="Image2" runat="server" ImageAlign="Middle" ImageUrl="~/imagenes/id-card.png" />&nbsp;&nbsp;&nbsp; <span class="auto-style14"><span>&nbsp;Registro de Usuarios</span></span></td>
+                        <td style="text-align:center; font-size:45px; font-family:'Smile of the Ocean'" colspan="7">                       
+                            <asp:Image ID="Image2" runat="server" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/add-user.png" style="margin-right: 15px" Height="50px"/> Registro de Usuarios</td>   
                     </tr>
-
+                    
+                    <tr>
+                        <td style="text-align:center; font-size:45px; font-family:'Smile of the Ocean'" colspan="7">                       
+                            &nbsp;</td>   
+                    </tr>
+                    
                     <tr>
                         <td class="auto-style160">&nbsp;</td>
                         <td class="auto-style92">Identificación:</td>
@@ -249,9 +255,7 @@
             </div>
         </section>
 
-         <div class="footer">
             <!--#include virtual="/menu/footer.txt" -->
-        </div>
 
     </form>
 </body>

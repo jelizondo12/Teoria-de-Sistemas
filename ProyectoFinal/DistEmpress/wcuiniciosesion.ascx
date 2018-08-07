@@ -61,7 +61,7 @@
 <section>
     <blockquote>
         <div>
-            <form class="auto-style9">
+            <form id="login" class="auto-style9">
                 <table class="auto-style3" align="center">
                     <tr>
                         <td colspan="2">
