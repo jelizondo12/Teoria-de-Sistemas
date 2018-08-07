@@ -121,19 +121,18 @@
                 <a href="#" class="bt-menu">Menú</a>
             </div>
 
-          		<nav class="auto-style8">
-			<ul id="usuario">
-				<li><a href="#">Inicio</a></li>
-				<li class="submenu" style="text-align:left">
+        <nav class="auto-style8">
+			<ul>
+				<li id="usuario" style="text-align:left" runat="server">
 					<a href="#">Usuarios</a>
 					<ul class="children">
 						<li><a href="wfrmRegistroUsuario.aspx">Registro Usuarios</a></li>
 						<li><a href="wfrmRecuperacion_Clave.aspx">Recuperación de Contraseña</a></li>
 					</ul>
 				</li>
-				<li><a href="wfrmIngresoProducto.aspx">Productos</a></li>
-				<li><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
-                <li><a href="wfrmConsultas.aspx">Reportes</a></li>
+				<li id="ingresoProducto" runat="server"><a href="wfrmIngresoProducto.aspx">Producto</a></li>
+                <li id="ingresoPedido" runat="server"><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
+                <li id="consultas" runat="server"><a href="wfrmConsultas.aspx">Reportes</a></li>
                 <li><a href="wfrmInicioSesion.aspx">Cerrar Sesión</a></li>
 			</ul>
 		</nav>
