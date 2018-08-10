@@ -31,27 +31,22 @@ body {
 }
 
 .table{
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:200px;
+    margin-right:200px;
     font-family:'Century Gothic';
     border-bottom-left-radius: 12px;
     border-bottom-right-radius:12px;
     border-top-left-radius:12px;
     border-top-right-radius:12px;
+    border:solid;
+    border-color:black;
 }
 
 .h1 {
-    font-family: 'Century Gothic';
-    font-size: 30px;
+    font-family: 'Smile of the Ocean';
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-}
-
-.h2{
-	font-family: 'Smile of the Ocean';
-	font-size: 50px;
-	font-weight: bold;
-     text-align: center;
 }
 
 .pedido{

@@ -13,108 +13,33 @@
     <script src="js/main.js"></script>
 
     <style type="text/css">
-        .auto-style1 {
-            overflow: auto;
-            height: 211px;
-            width: 1091px;
-        }
-
-        .auto-style2 {
-            width: 71%;
-            margin-left: 10px;
-            margin-right:10px;
-            height: 500px;
-        }
-
-        .auto-style3 {
-            margin-left: 29px;
-        }
-
-        .auto-style4 {
-            margin-left: 0px;
-        }
-
+        
         .auto-style6 {
             margin-left: 211px;
-        }
-
-        .auto-style7 {
-            text-align: center;
-        }
-
-        .auto-style14 {
-            width: 286px;
-            text-align: left;
-        }
-
-        .auto-style9 {
-            width: 124px;
-            text-align: center;
-            height: 71px;
-        }
-
-        .auto-style10 {
-            text-align: center;
-            align-content:center;
-            position:center;
-            vertical-align:middle;
-        }
-
-        .auto-style11 {
-            width: 286px;
-            text-align: center;
-            height: 71px;
-        }
-
-        .auto-style12 {
-            width: 42px;
-        }
-
-        .auto-style13 {
-            width: 42px;
-            text-align: center;
         }
 
         .auto-style15 {
             color: #0000FF;
         }
 
-        .auto-style18 {
-            width: 35px;
+        .auto-style43 {
+            height: 38px;
+            width: 338px;
+        }
+        .auto-style44 {
+            height: 39px;
+            width: 338px;
+        }
+        .auto-style45 {
+            height: 39px;
             text-align: center;
         }
-
-        .auto-style19 {
-            overflow: auto;
-            height: 95px;
-            text-align: center;
+        .auto-style46 {
+            height: 39px;
         }
-
-        .auto-style24 {
-            width:auto;
-            margin-left:0px;
-            margin-right:50px;
-            height: auto;
-            text-align: center;
-            vertical-align:middle;
-            position:center;
-            overflow: auto;
-        }
-        .auto-style25 {
-            text-align: left;
-            align-content: center;
-            position: center;
-            vertical-align: middle;
-        }
-        .auto-style26 {
-            width: 286px;
-            text-align: center;
-            height: 34px;
-        }
-        .auto-style27 {
-            width: 124px;
-            text-align: center;
-            height: 34px;
+        .auto-style47 {
+            width: 200px;
+            height: 20px;
         }
     </style>
 </head>
@@ -147,120 +72,88 @@
             </header>
 
             <div>
-                <section class="cuerpo">
-                    <h1 class="h1"><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/invoice.png" Width="50px" />Ingreso de Pedidos</h1>
+                    <h1 class="h1" style="text-align: center; vertical-align: middle"><asp:Image ID="Image1" runat="server" Height="50px" ImageUrl="~/imagenes/invoice.png" Width="50px" />Ingreso de Pedidos</h1><br /><br />
 
-                    <asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label>
-                    <asp:Label ID="lbl_numero_factura" runat="server" Text=""></asp:Label>
-                    <asp:Label ID="Label11" runat="server" Text="Cliente:"></asp:Label><asp:DropDownList ID="ddl_clientes" runat="server" Height="20px" Width="200px">
-                    </asp:DropDownList><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" />
+                    <table class="table" style="align-content:center">
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label></td>
+                            <td class="auto-style43"><asp:Label ID="lbl_numero_factura" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
+                            <td class="auto-style43" colspan="2">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
 
-                    <div class="div_grid2">
-                        <div>
-                            <asp:GridView ID="dgv_inventario" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" ShowHeaderWhenEmpty="true" Width="96%" Height="207px">
-                                <AlternatingRowStyle BackColor="White" />
-                                <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                                <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                                <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                                <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                                <SortedDescendingHeaderStyle BackColor="#820000" />
-                            </asp:GridView>
-                        </div>
-                    </div>
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label11" runat="server" Text="Cliente:"></asp:Label></td>
+                            <td class="auto-style43"><asp:DropDownList ID="ddl_clientes" runat="server" Height="20px" Width="200px">
+                    </asp:DropDownList></td>
+                        <%--    <td class="auto-style37"><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" /></td>--%>
+                        </tr>
 
-                    <h1 class="auto-style25"> <asp:Label ID="Label8" runat="server" Text="Pedido de productos"></asp:Label></h1>
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>
+                            <td class="auto-style43"><asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px" ReadOnly="True"></asp:TextBox></td>
+                            <td class="auto-style43" colspan="2"> <%--<asp:ImageButton ID="ib_agregar" runat="server" ImageUrl="~/imagenes/shopping-cart.png" CssClass="auto-style4" OnClick="ib_agregar_Click" CausesValidation="true" ValidationGroup="Modificar_Registrar" Height="50px" ImageAlign="Middle" Width="50px" />--%></td>
+                            <td class="auto-style43"><%--<asp:ImageButton ID="ib_limpiar" runat="server" Height="50px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" />--%></td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
 
-                    <section>
-                        <table class="table">
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
-                                <td class="auto-style18">&nbsp;</td>
-                                <td class="auto-style7">
-                                    <asp:ImageButton ID="ib_agregar" runat="server" ImageUrl="~/imagenes/shopping-cart.png" CssClass="auto-style4" OnClick="ib_agregar_Click" CausesValidation="true" ValidationGroup="Modificar_Registrar" Height="50px" ImageAlign="Middle" Width="50px" /></td>
-                                <td class="auto-style7">
-                                    <asp:ImageButton ID="ib_limpiar" runat="server" Height="50px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label1" runat="server" Text="Id del Producto: "></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:TextBox ID="txt_idproducto" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
+                            <td class="auto-style43"><asp:DropDownList ID="DropDownList1" runat="server" height="20px" width="200px">
+                                    </asp:DropDownList>
                                 </td>
-                                <td class="auto-style18">
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txt_idproducto" ErrorMessage="IdProducto no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
+                            <td class="auto-style43" colspan="2">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label3" runat="server" Text="Categoria: "></asp:Label></td>
+                            <td class="auto-style43"><asp:Label ID="lbl_category" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
+                            <td class="auto-style43" colspan="2">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label4" runat="server" Text="Cantidad: "></asp:Label></td>
+                            <td class="auto-style43"><input runat="server" id="txt_cantidad" type="number" min="1" class="auto-style47" /></td>
+                            <td class="auto-style43" colspan="2"><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_cantidad" ErrorMessage="Cantidad no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
-                                <td class="auto-style12">
-                                    <asp:Label ID="lbl_productname" runat="server" Text=""></asp:Label></td>
-                                <td class="auto-style18">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label3" runat="server" Text="Categoria: "></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:Label ID="lbl_category" runat="server" Text=""></asp:Label></td>
-                                <td class="auto-style18">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label4" runat="server" Text="Cantidad: "></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:TextBox ID="txt_cantidad" runat="server" Height="20px" Width="200px" TextMode="Number"></asp:TextBox>
-                                </td>
-                                <td class="auto-style18">
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_cantidad" ErrorMessage="Cantidad no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label5" runat="server" Text="Precio Unitario: "></asp:Label></td>
-                                <td class="auto-style12">
-                                    <asp:Label ID="lbl_unitprice" runat="server" Text=""></asp:Label></td>
-                                <td class="auto-style18">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label6" runat="server" Text="Fecha del Pedido:"></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:Label ID="lbl_fechapedido" runat="server" Text=""></asp:Label></td>
-                                <td class="auto-style18">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style14">
-                                    <asp:Label ID="Label7" runat="server" Text="Usuario: "></asp:Label></td>
-                                <td class="auto-style13">
-                                    <asp:DropDownList ID="ddl_usuario" runat="server" Height="20px" Width="200px">
-                                    </asp:DropDownList></td>
-                                <td class="auto-style18">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style26">
-                                    </td>
-                                <td class="auto-style27" colspan="2">
-                                    </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style11">
-                                    <asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="50px" Width="50px" /></td>
-                                <td class="auto-style9" colspan="2">
-                                    <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/imagenes/receipt.png" OnClick="ImageButton1_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="auto-style7">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="auto-style7">
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label5" runat="server" Text="Precio Unitario: "></asp:Label></td>
+                            <td class="auto-style43"><asp:Label ID="lbl_unitprice" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
+                            <td class="auto-style43" colspan="2">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style43"><asp:Label ID="Label6" runat="server" Text="Fecha del Pedido:"></asp:Label></td>
+                            <td class="auto-style43"><asp:Label ID="lbl_fechapedido" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
+                            <td class="auto-style43" colspan="2">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style44"><asp:Label ID="Label7" runat="server" Text="Usuario: "></asp:Label></td>
+                            <td class="auto-style44"><input id="txt_usuario" type="text" /></td>
+                            <td class="auto-style44" colspan="2">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="auto-style44">
+                                    <asp:Label ID="Label12" runat="server" Text="Label">Seleccione una accion:</asp:Label>
+                            </td>
+                            <td class="auto-style44">
                                     <asp:DropDownList ID="ddl_seleccionar" runat="server" Height="20px" Width="200px">
                                         <asp:ListItem Value="Seleccionar">Seleccionar</asp:ListItem>
                                         <asp:ListItem Value="Registrar">Registrar</asp:ListItem>
@@ -268,39 +161,49 @@
                                         <asp:ListItem>Eliminar</asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="auto-style19">
-                                    <asp:Label ID="lbl_mensaje" runat="server" Text="" CssClass="auto-style15"></asp:Label>
-                                    <div class="auto-style10">
-                                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="auto-style6" ForeColor="Red" Width="344px" ValidationGroup="Modificar_Registrar" />
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="auto-style10">
-                       
-                            <asp:GridView runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="631px" ShowHeaderWhenEmpty="true" HorizontalAlign="Center" ID="dgv_carrito">
-
-                                <AlternatingRowStyle BackColor="White" />
-                                <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                                <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                                <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                                <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                                <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                                <SortedDescendingHeaderStyle BackColor="#820000" />
+                            <td class="auto-style44" colspan="2">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="auto-style46" colspan="3"><%--<asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="50px" Width="50px" />--%></td>
+                            <td class="auto-style46" colspan="3"><%--<asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/imagenes/receipt.png" OnClick="ImageButton1_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" />--%></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="auto-style45" colspan="6"><asp:Label ID="lbl_mensaje" runat="server" Text="" CssClass="auto-style15"></asp:Label></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="auto-style45" colspan="6"><asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="auto-style6" ForeColor="Red" Width="344px" ValidationGroup="Modificar_Registrar" /></td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="auto-style45" colspan="6"><asp:GridView runat="server" CellPadding="4" GridLines="Horizontal" Width="631px" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" ID="dgv_carrito" BackColor="White" BorderColor="#336666" BorderStyle="Solid" BorderWidth="3px">
+                                <FooterStyle BackColor="White" ForeColor="#333333" />
+                                <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="White" ForeColor="#333333" />
+                                <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                                <SortedAscendingHeaderStyle BackColor="#487575" />
+                                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                                <SortedDescendingHeaderStyle BackColor="#275353" />
                             </asp:GridView>
-                 
-
                                 </td>
-                            </tr>
+                        </tr>
+                        
+                        <tr>
+                            <td class="auto-style44">
+                                    &nbsp;</td>
+                            <td class="auto-style44">
+                                    &nbsp;</td>
+                            <td class="auto-style44" colspan="2">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                            <td class="auto-style44">&nbsp;</td>
+                        </tr>
                         </table>
-                    </section>
-
-                </section>
             </div>
           
             <!--#include virtual="/menu/footer.txt" -->

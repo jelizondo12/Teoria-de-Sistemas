@@ -11,7 +11,7 @@ namespace DistEmpress
 {
     public partial class wfrmFacturación : System.Web.UI.Page
     {
-        private string Numero_Factura;
+        private string Numero_Factura="1";
         decimal Sub_total = 0;
         decimal Impuesto_ventas = 0;
         decimal Total_pagar = 0;
