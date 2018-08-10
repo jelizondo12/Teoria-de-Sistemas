@@ -629,7 +629,7 @@ namespace DistEmpress_DAL
             return resultados;
         }
 
-        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(Products Productos)
+        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(int Productos)
         {
             NorthwindEntities contexto = null;
             List<sp_Proyecto_SeleccionarPedido_Result> resultados =
@@ -639,7 +639,7 @@ namespace DistEmpress_DAL
                 contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
-                var consulta = contexto.sp_Proyecto_SeleccionarPedido(Productos.ProductID).ToList();
+                var consulta = contexto.sp_Proyecto_SeleccionarPedido(Productos).ToList();
 
                 if (consulta != null) //Se verifica consulta sea diferente a NULL
                 {

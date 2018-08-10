@@ -273,7 +273,7 @@ namespace DistEmpress_BLL
             }
         }
 
-        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(Products productos)
+        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(int productos)
         {
             try
             {
