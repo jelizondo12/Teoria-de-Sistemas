@@ -23,16 +23,16 @@
             <nav style="text-align:center">
                 <ul>
                     <li><a href="wfrmIndex.aspx">Inicio</a></li>
-                    <li id="Li1" runat="server">
+                    <li id="usuario" runat="server">
                         <a href="#">Usuario</a>
                         <ul class="children">
                             <li><a href="wfrmRegistroUsuario.aspx">Registro de Usuarios</a></li>
                             <li><a href="wfrmRecuperacion_Clave.aspx">Recuperación Contraseña</a></li>
                         </ul>
                     </li>
-                    <li id="Li2" runat="server"><a href="wfrmIngresoProducto.aspx">Producto</a></li>
-                    <li id="Li3" runat="server"><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
-                    <li id="Li4" runat="server"><a href="wfrmConsultas.aspx">Reportes</a></li>
+                    <li id="ingresoProducto" runat="server"><a href="wfrmIngresoProducto.aspx">Producto</a></li>
+                    <li id="ingresoPedido" runat="server"><a href="wfrmIngresoPedido.aspx">Pedidos</a></li>
+                    <li id="consultas" runat="server"><a href="wfrmConsultas.aspx">Reportes</a></li>
                     <li><a href="wfrmInicioSesion.aspx">Cerrar Sesión</a></li>
                 </ul>
             </nav>

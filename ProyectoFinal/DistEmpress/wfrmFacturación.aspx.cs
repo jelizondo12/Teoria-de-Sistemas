@@ -17,42 +17,44 @@ namespace DistEmpress
         decimal Total_pagar = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            switch (Convert.ToChar(Session["perfil"]))
-            {
-                case 'C':
-                    usuario.Style.Add("display", "none");
-                    ingresoPedido.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-                case 'V':
-                    usuario.Style.Add("display", "none");
-                    ingresoProducto.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-            }
             try
             {
-                this.Numero_Factura = Request.QueryString["NumeroFactura"];
-
-                this.lbl_NumeroFactura.Text = Numero_Factura.ToString();
-
-                List<sp_Proyecto_Reporte_Pedidos_Result> resultados = Logica.ObtenerPedidos(2, Convert.ToInt32(Numero_Factura));
-
-                this.dgv_carrito.DataSource = resultados;
-                this.dgv_carrito.DataBind();
-
-                for (int i=0;i<resultados.Count;i++)
+                if (!Page.IsPostBack)
                 {
-                    Sub_total = (resultados[i].Cantidad*resultados[i].UnitPrice) + Sub_total;
-                    Impuesto_ventas = Sub_total * Convert.ToDecimal(0.13);
-                    Total_pagar = (Sub_total + Impuesto_ventas);
-                }
+                    switch (Convert.ToChar(Session["perfil"]))
+                    {
+                        case 'C':
+                            usuario.Style.Add("display", "none");
+                            ingresoPedido.Style.Add("display", "none");
+                            consultas.Style.Add("display", "none");
+                            break;
+                        case 'V':
+                            usuario.Style.Add("display", "none");
+                            ingresoProducto.Style.Add("display", "none");
+                            consultas.Style.Add("display", "none");
+                            break;
+                    }
 
-                this.lbl_sub_total.Text = Convert.ToString(Sub_total);
-                this.lbl_impuestoventas.Text = Convert.ToString(Impuesto_ventas);
-                this.lbl_total.Text = Convert.ToString(Total_pagar);
+                    Numero_Factura = Request.QueryString["NumeroFactura"];
 
+                    lbl_NumeroFactura.Text = Numero_Factura.ToString();
 
+                    List<sp_Proyecto_Reporte_Pedidos_Result> resultados = Logica.ObtenerPedidos(2, Convert.ToInt32(Numero_Factura));
+
+                    dgv_carrito.DataSource = resultados;
+                    dgv_carrito.DataBind();
+
+                    for (int i = 0; i < resultados.Count; i++)
+                    {
+                        Sub_total = (resultados[i].Cantidad * resultados[i].UnitPrice) + Sub_total;
+                        Impuesto_ventas = Sub_total * Convert.ToDecimal(0.13);
+                        Total_pagar = (Sub_total + Impuesto_ventas);
+                    }
+
+                    lbl_sub_total.Text = Convert.ToString(Sub_total);
+                    lbl_impuestoventas.Text = Convert.ToString(Impuesto_ventas);
+                    lbl_total.Text = Convert.ToString(Total_pagar);
+                }               
             }
             catch (Exception ex)
             {

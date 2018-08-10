@@ -17,8 +17,12 @@ namespace DistEmpress
         string claveActual;
         protected void Page_Load(object sender, EventArgs e)
         {
-             identificacion = Request.QueryString["Identificacion"];
-             claveActual = Request.QueryString["ClaveActual"];
+            if (!Page.IsPostBack)
+            {
+                identificacion = Request.QueryString["Identificacion"];
+                claveActual = Request.QueryString["ClaveActual"];
+            }
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)

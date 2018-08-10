@@ -101,7 +101,6 @@
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
                             <td class="auto-style43"><asp:DropDownList ID="ddl_producto" runat="server" height="20px" width="200px">
-                                    <asp:ListItem Value="Seleccionar">Seleccionar</asp:ListItem>
                                     </asp:DropDownList>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="31px" Width="31px" />
                                 </td>
