@@ -7,35 +7,30 @@ body {
     background-color: #000;
 }
 
-#cuerpo{
-  border:solid;
-  border-radius:15px;
-  border-color:#cccccc;
-  width:auto;
-}
-
 .footer{
     margin-top: 20px;
     color:black;
     font-family:'Century Gothic';
     background-color:white;
-}
-
-.div_grid{
-    margin-bottom:50px;
-    height:auto;
-    width:auto;
-    align-content:center;
-    position:center;
-    font-weight:normal;
-    font-family:'Century Gothic';
     text-align:center;
 }
 
-h1 {
-    font-family: 'Century Gothic';
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
+.table{
+    max-height:800px;
+    max-width:800px;
+    border-color:#000000;
+    border:solid;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius:12px;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    font-family:'Century Gothic';
+    font-size:15px;
+    color:black;
 }
 
+h1{
+    font-family:'Smile of the Ocean';
+    font-size:50px;
+    text-align:center;
+}
