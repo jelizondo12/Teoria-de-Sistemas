@@ -11,7 +11,7 @@ namespace DistEmpress
 {
     public partial class wfrmFacturación : System.Web.UI.Page
     {
-        private string Numero_Factura="1";
+        private string Numero_Factura;
         decimal Sub_total = 0;
         decimal Impuesto_ventas = 0;
         decimal Total_pagar = 0;
@@ -67,15 +67,16 @@ namespace DistEmpress
             SALES venta = new SALES();
 
             venta.num_factura = Convert.ToInt32(lbl_NumeroFactura.Text.Trim());
-            venta.Sub_total = Convert.ToInt32(lbl_sub_total.Text.Trim());
-            venta.Impuesto_ventas = Convert.ToInt32(lbl_sub_total.Text.Trim());
-            venta.Total_pagar = Convert.ToInt32(lbl_sub_total.Text.Trim());
+            venta.Sub_total = Convert.ToDecimal(lbl_sub_total.Text.Trim());
+            venta.Impuesto_ventas = Convert.ToDecimal(lbl_sub_total.Text.Trim());
+            venta.Total_pagar = Convert.ToDecimal(lbl_sub_total.Text.Trim());
 
             if(lbl_sub_total.Text!="" & lbl_impuestoventas.Text!="" & lbl_total.Text!="")
             {
                 Logica.AgregarVenta(venta);
 
-                Response.Write("<sript languaje=javascript>alert('Datos almacenados correctamente');</script>");
+                Response.Write("<script languaje=javascript>alert('Datos almacenados correctamente');</script>");
+                Response.Redirect("wfrmIngresoPedido.aspx", false);
             }
         }
     }
