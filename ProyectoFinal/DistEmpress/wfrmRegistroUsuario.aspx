@@ -39,7 +39,7 @@
         </header>
 
         <section>
-            <div>
+
                 <table class="table">
                     <tr>
                         <td style="text-align:center; font-size:45px; font-family:'Smile of the Ocean'" colspan="7">                       
@@ -252,7 +252,6 @@
                         <td style="text-align: center" class="auto-style115">&nbsp;</td>
                     </tr>
                 </table>
-            </div>
         </section>
 
             <!--#include virtual="/menu/footer.txt" -->
