@@ -1063,7 +1063,7 @@ advertencia 6013: La tabla o vista 'Northwind.empress.SALE_TAX' no tiene definid
           <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
           <End Role="Territories" Type="Self.Territories" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="NorthwindEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="NorthwindEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BILLS" EntityType="Self.BILLS" />
           <EntitySet Name="Categories" EntityType="Self.Categories" />
           <EntitySet Name="Customers" EntityType="Self.Customers" />
@@ -1557,7 +1557,7 @@ advertencia 6013: La tabla o vista 'Northwind.empress.SALE_TAX' no tiene definid
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities1">
+        <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities">
           <EntitySetMapping Name="BILLS">
             <EntityTypeMapping TypeName="NorthwindModel.BILLS">
               <MappingFragment StoreEntitySet="BILLS">

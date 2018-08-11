@@ -98,7 +98,7 @@
     <Content Include="css\consultas.css" />
     <Content Include="css\Facturas.css" />
     <Content Include="css\index.css" />
-    <Content Include="css\InicioSesion.css" />
+    <Content Include="css\login.css" />
     <Content Include="css\menu.css" />
     <Content Include="css\Pedidos.css" />
     <Content Include="css\Productos.css" />
@@ -107,6 +107,7 @@
     <Content Include="imagenes\2.png" />
     <Content Include="imagenes\3.png" />
     <Content Include="imagenes\9.png" />
+    <Content Include="imagenes\add-user.png" />
     <Content Include="imagenes\cancel.png" />
     <Content Include="imagenes\checked.png" />
     <Content Include="imagenes\clean.png" />
@@ -139,6 +140,7 @@
     <Content Include="imagenes\search.png" />
     <Content Include="imagenes\shopping-cart.png" />
     <Content Include="imagenes\user.png" />
+    <Content Include="js\main.js" />
     <Content Include="menu\footer.txt" />
     <Content Include="menu\topmenu.txt" />
     <Content Include="packages.config" />

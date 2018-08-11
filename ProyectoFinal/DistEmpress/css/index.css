@@ -1,44 +1,36 @@
 ﻿* {
 	padding:0;
 	margin:0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 body{
-	background-color:black;	
+	 width:auto;
+    height:auto;
+    background-color: black;
+    font-family: 'Century Gothic';
+    align-content: center;
 }
 
 .cuerpo {
-    width:auto;
-    height:auto;
-    background-color: lightgray;
-    border-color: lightgray;
+    margin-left: 325px;
     font-family: 'Century Gothic';
-    border: solid;
-    margin-left:100px;
-    margin-right:100px;
-    border-radius: 15px;
+    border:solid;
+    border-color:#000;
     text-align: center;
-    position: center;
-    align-content: center;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    margin-bottom:20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
 }
 
-/* PIE DE PAGINA */
 .footer{
 	width:auto;
 	height: auto;
-	color:#FFF;
-	font-size: 24px;
+	font-size: 15px;
 	text-align: center;
 	font-weight: bold;
-	background-color:#000;
+	background-color:white;
     font-family: 'Century Gothic';
-	font-size: 15px;
 	font-weight: bold;
+    color: black;
 }

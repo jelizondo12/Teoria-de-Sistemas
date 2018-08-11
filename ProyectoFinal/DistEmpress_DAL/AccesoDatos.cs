@@ -17,11 +17,11 @@ namespace DistEmpress_DAL
         #region Agregar
         public static bool AgregarProducto(Products Productos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
 
             try
             {
-                contexto = new NorthwindEntities1();
+                contexto = new NorthwindEntities();
 
                 contexto.Products.Add(Productos);
                 contexto.SaveChanges();
@@ -41,11 +41,11 @@ namespace DistEmpress_DAL
 
         public static bool AgregarPedido(Pedidos Pedidos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
 
             try
             {
-                contexto = new NorthwindEntities1();
+                contexto = new NorthwindEntities();
 
                 contexto.Pedidos.Add(Pedidos);
                 contexto.SaveChanges();
@@ -65,12 +65,12 @@ namespace DistEmpress_DAL
 
         public static bool AgregarUsuario(USERS persona, Security personaSecurity)
         {
-            NorthwindEntities1 contexto = null;
-            //NorthwindEntities1 contexto2 = null;
+            NorthwindEntities contexto = null;
+            //NorthwindEntities contexto2 = null;
 
             try
             {
-                contexto = new NorthwindEntities1();
+                contexto = new NorthwindEntities();
 
                 contexto.sp_Proyecto_InsertarUsuario(persona.Identificacion, persona.Nombre, persona.Primer_Apellido, persona.Segundo_Apellido, persona.Fecha_nacimiento, persona.Telefono, persona.Correo, persona.Direccion, persona.CREATEDATE);
                 contexto.sp_Proyecto_InsertarUsuarioSecurity(persona.Identificacion,personaSecurity.Nombre_Usuario,personaSecurity.clave,personaSecurity.TIPO_USUARIO,personaSecurity.Token);
@@ -90,11 +90,11 @@ namespace DistEmpress_DAL
 
         public static bool AgregarVenta(SALES venta)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
 
             try
             {
-                contexto = new NorthwindEntities1();
+                contexto = new NorthwindEntities();
 
                 contexto.SALES.Add(venta);
                 contexto.SaveChanges();
@@ -114,12 +114,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_ProyectoGenerarFactura_Result> GenerarFactura(BILLS factura)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_ProyectoGenerarFactura_Result> resultados =
                                         new List<sp_ProyectoGenerarFactura_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_ProyectoGenerarFactura(factura.CustumerID,factura.fecha).ToList();
@@ -153,12 +153,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_ModificarProducto_Result> AgregarProductoModificado(Products productos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_ModificarProducto_Result> resultados =
                                         new List<sp_Proyecto_ModificarProducto_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_ModificarProducto
@@ -205,10 +205,10 @@ namespace DistEmpress_DAL
 
         public static bool AgregarUsuarioModificado(USERS persona, Security personaSecurity)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 contexto.sp_Proyecto_ModificarUsuario
@@ -236,12 +236,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_ModificarPedido_Result> AgregarPedidoModificado(Pedidos Pedidos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_ModificarPedido_Result> resultados =
                                         new List<sp_Proyecto_ModificarPedido_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_ModificarPedido
@@ -286,10 +286,10 @@ namespace DistEmpress_DAL
 
         public static bool ModificarContra(int opcion, int usuario, string contra)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_ModificarContra(opcion, usuario, contra);
@@ -304,12 +304,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_ActualizarInventario_Result> ActualizarInventario(int opcion,int ID, int cantidad)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_ActualizarInventario_Result> resultados =
                                         new List<sp_Proyecto_ActualizarInventario_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_ActualizarInventario(opcion,ID, cantidad).ToList();
@@ -349,12 +349,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_VerificarProductoModificar_Result> VerificarProductoModificar(Products Productos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_VerificarProductoModificar_Result> resultados =
                                         new List<sp_Proyecto_VerificarProductoModificar_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_VerificarProductoModificar(Productos.ProductID).ToList();
@@ -392,12 +392,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_VerificarSesion_Result> VerificarSesion(Security personaSecurity)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_VerificarSesion_Result> resultados =
                                         new List<sp_Proyecto_VerificarSesion_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_VerificarSesion(personaSecurity.Nombre_Usuario).ToList();
@@ -432,12 +432,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_VerificarUsuarioModificar_Result> VerificarUsuarioModificar(USERS persona)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_VerificarUsuarioModificar_Result> resultados =
                                         new List<sp_Proyecto_VerificarUsuarioModificar_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_VerificarUsuarioModificar(persona.Identificacion).ToList();
@@ -476,12 +476,12 @@ namespace DistEmpress_DAL
         #region Eliminar
         public static List<sp_ProyectoEliminarProducto_Result> EliminarProducto(Products Productos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_ProyectoEliminarProducto_Result> resultados =
                                         new List<sp_ProyectoEliminarProducto_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_ProyectoEliminarProducto(Productos.ProductID).ToList();
@@ -509,12 +509,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_EliminarPedido_Result> EliminarPedido(int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_EliminarPedido_Result> resultados =
                                         new List<sp_Proyecto_EliminarPedido_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_EliminarPedido(ID).ToList();
@@ -542,11 +542,11 @@ namespace DistEmpress_DAL
 
         public static bool EliminarUsuario(USERS persona)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
 
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_EliminarUsuario(persona.Identificacion);
@@ -563,12 +563,12 @@ namespace DistEmpress_DAL
         #region Obtener Datos Necesarios
         public static List<sp_Proyecto_CargarSupplier_Result> CargarSupplier()
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_CargarSupplier_Result> resultados =
                                         new List<sp_Proyecto_CargarSupplier_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_CargarSupplier().ToList();
@@ -598,12 +598,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_CargarUsuarios_Result> CargarUsuarios()
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_CargarUsuarios_Result> resultados =
                                         new List<sp_Proyecto_CargarUsuarios_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_CargarUsuarios().ToList();
@@ -629,17 +629,17 @@ namespace DistEmpress_DAL
             return resultados;
         }
 
-        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(Products Productos)
+        public static List<sp_Proyecto_SeleccionarPedido_Result> SeleccionarPedido(int Productos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_SeleccionarPedido_Result> resultados =
                                         new List<sp_Proyecto_SeleccionarPedido_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
-                var consulta = contexto.sp_Proyecto_SeleccionarPedido(Productos.ProductID).ToList();
+                var consulta = contexto.sp_Proyecto_SeleccionarPedido(Productos).ToList();
 
                 if (consulta != null) //Se verifica consulta sea diferente a NULL
                 {
@@ -668,12 +668,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_SeleccionarTablaPedidos_Result> SeleccionarTablaPedidos(Pedidos Pedidos)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_SeleccionarTablaPedidos_Result> resultados =
                                         new List<sp_Proyecto_SeleccionarTablaPedidos_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_SeleccionarTablaPedidos(Pedidos.IdPedido).ToList();
@@ -711,12 +711,12 @@ namespace DistEmpress_DAL
 
         public static List<sp_Proyecto_VerificarSesion_Result> ObenerUsuarios(Security personaSecurity)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_VerificarSesion_Result> resultados =
                                         new List<sp_Proyecto_VerificarSesion_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_VerificarSesion(personaSecurity.Nombre_Usuario).ToList();
@@ -748,12 +748,12 @@ namespace DistEmpress_DAL
         #region Reporterías
         public static List<sp_Proyecto_Reporte_Clientes_Result> ObtenerClientes(int opcion, string ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Clientes_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Clientes_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Clientes(opcion,ID).ToList();
@@ -793,12 +793,12 @@ namespace DistEmpress_DAL
         } //listo
         public static List<sp_Proyecto_Reporte_Proveedores_Result> ObtenerProveedores(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Proveedores_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Proveedores_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Proveedores(opcion,ID).ToList();
@@ -839,12 +839,12 @@ namespace DistEmpress_DAL
         }//listo
         public static List<sp_Proyecto_Reporte_Usuarios_Result> ObtenerUsuarios(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Usuarios_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Usuarios_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Usuarios(opcion,ID).ToList();
@@ -885,12 +885,12 @@ namespace DistEmpress_DAL
         }//listo
         public static List<sp_Proyecto_Reporte_Pedidos_Result> ObtenerPedidos(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Pedidos_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Pedidos_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Pedidos(opcion,ID).ToList();
@@ -926,12 +926,12 @@ namespace DistEmpress_DAL
         }//listo
         public static List<sp_Proyecto_Reporte_Ventas_Result> ObtenerVentas(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Ventas_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Ventas_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Ventas(opcion,ID).ToList();
@@ -962,12 +962,12 @@ namespace DistEmpress_DAL
         } //listo
         public static List<sp_Proyecto_Reporte_Inventario_Result> ObtenerInventario(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Inventario_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Inventario_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Inventario(opcion,ID).ToList();
@@ -1006,12 +1006,12 @@ namespace DistEmpress_DAL
         }//listo
         public static List<sp_Proyecto_Reporte_Empleados_Result> ObtenerEmpleados(int opcion, int ID)
         {
-            NorthwindEntities1 contexto = null;
+            NorthwindEntities contexto = null;
             List<sp_Proyecto_Reporte_Empleados_Result> resultados =
                                         new List<sp_Proyecto_Reporte_Empleados_Result>();
             try
             {
-                contexto = new NorthwindEntities1(); //Se inicializa megainstancia del Entity
+                contexto = new NorthwindEntities(); //Se inicializa megainstancia del Entity
 
                 //Se obtiene valores de consulta en BD
                 var consulta = contexto.sp_Proyecto_Reporte_Empleados(opcion,ID).ToList();

@@ -6,17 +6,6 @@
 	  font-weight: normal;
 	}
 
-/*.wrapper {	
-    resize:both;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
-}*/
-
 .form-signin {
     max-width: 380px;
     padding: 15px 35px 45px;
@@ -38,7 +27,7 @@
 	  margin-bottom: 30px;
       text-align:center;
       font-family: 'Route Du Soleil DEMO';
-      font-size: 80px;
+      font-size: 65px;
  }
 
 .form-control {
@@ -70,3 +59,10 @@
       border-bottom-right-radius: 10px;
       border-color: black;
       }
+
+@media screen and (max-width: 800px) {
+    #login {
+        display:none;
+    }
+}
+

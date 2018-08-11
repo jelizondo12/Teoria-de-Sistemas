@@ -6,55 +6,51 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Reportes</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link href="css/consultas.css" rel="stylesheet" />
     <link href="css/menu.css" rel="stylesheet" />
-    <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-        }
+    <script src="js/main.js"></script>
 
-        .auto-style2 {
-            text-align: left;
-            overflow: auto;
-            height: 417px;
-            width: 800px;
-        }
-        .auto-style3 {
-            font-size: large;
-        }
-        .auto-style4 {
-            width:800px;
-            height:800px;
-        }
-         .auto-style8 {
+    <style type="text/css">
+        
+         .auto-style10 {
             text-align: center;
+        }
+        .auto-style11 {
+            width: 51px;
+        }
+        .auto-style12 {
+            text-align: center;
+            width: 51px;
+        }
+        .auto-style13 {
+            width: 41px;
+        }
+        .auto-style14 {
+            text-align: center;
+            width: 41px;
+        }
+        .auto-style15 {
+            width: 51px;
         }
     </style>
 </head>
 
 <body> 
     <form id="form1" runat="server">
-        <section id="contenedor">
-            <%--encabezdo--%>
-            <header>
-                <article class="logo">
-                    <section id="logo" class="fadeIn">
-                        
-                    </section>
-                </article>
-            </header>
-            <%-- menu --%>
+        <section>
+         
             <header>
                 <div class="menu_bar">
                     <a href="#" class="bt-menu">Menú</a>
                 </div>
 
-                <nav class="auto-style8">
+                <nav style="text-align:center">
                     <ul>
                         <li><a href="wfrmIndex.aspx">Inicio</a></li>
                         <li id="usuario" runat="server">
                             <a href="#">Usuario</a>
-                            <ul class="children">
+                            <ul class="children" style="text-align:left">
                                 <li><a href="wfrmRegistroUsuario.aspx">Registro de Usuarios</a></li>
                                 <li><a href="wfrmRecuperacion_Clave.aspx">Recuperación Contraseña</a></li>
                             </ul>
@@ -67,22 +63,30 @@
                 </nav>
             </header>
 
-            <%--Cuerpo--%>
-            <div>
-            <blockquote id="cuerpo" class="auto-style1">
-                <br/>
-                    <h1><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" ImageUrl="~/imagenes/report.png" Width="50px" />&nbsp; Reportes</h1>
-                <br />
-                <table class="auto-style4">
-                    <tr>
-                        <td>
+            <table class="table" style="border-style: solid; border-color: #000000">
+                <tr>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td colspan="5"><h1><asp:Image ID="Image1" runat="server" Height="50px" ImageAlign="AbsMiddle" style="margin-right:15px" ImageUrl="~/imagenes/report.png" Width="50px"/>Reportes</h1></td>
+                    <td class="auto-style11">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td colspan="5">&nbsp;</td>
+                    <td class="auto-style11">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style13">
+                            &nbsp;</td>
+                    <td>
                             <asp:Label ID="Label1" runat="server" Text="Buscar:"></asp:Label>
                         </td>
-                        <td>
+                    <td>
+                            &nbsp;</td>
+                    <td>
                             <asp:TextBox ID="txt_buscar" runat="server" Height="20px" Width="200px"></asp:TextBox>
                         </td>
-                        <td>
-                            <asp:DropDownList ID="ddl_opcion" runat="server" Height="20px" Width="200px">
+                    <td>
+                            <asp:DropDownList ID="ddl_opcion" runat="server" Height="24px" Width="204px">
                                 <asp:ListItem>Seleccione</asp:ListItem>
                                 <asp:ListItem>Clientes</asp:ListItem>
                                 <asp:ListItem>Proveedores</asp:ListItem>
@@ -93,37 +97,50 @@
                                 <asp:ListItem>Empleados</asp:ListItem>
                             </asp:DropDownList>
                         </td>
-                        <td>
-                            <asp:ImageButton ID="ibtnBuscar" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/loupe.png" OnClick="ibtnBuscar_Click" Width="50px" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <div id="div_grid" class="auto-style2">
-                                <asp:GridView ID="dgv_reportes" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="779px" ShowHeaderWhenEmpty="true" HorizontalAlign="Center">
-
+                    <td class="auto-style15"><asp:ImageButton ID="ibtnBuscar" runat="server" Height="50px" ImageAlign="Middle" ImageUrl="~/imagenes/loupe.png" OnClick="ibtnBuscar_Click" Width="50px" /></td>
+                    <td class="auto-style11">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">                           
+                                &nbsp;</td>
+                    <td colspan="5" class="auto-style10">                           
+                                <asp:GridView ID="dgv_reportes" runat="server" CellPadding="4" ForeColor="Black" GridLines="Vertical" Width="779px" ShowHeaderWhenEmpty="True" HorizontalAlign="Center" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px">
                                     <AlternatingRowStyle BackColor="White" />
-                                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                                    <SortedDescendingHeaderStyle BackColor="#820000" />
+                                    <FooterStyle BackColor="#CCCC99" />
+                                    <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                                    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                                    <RowStyle BackColor="#F7F7DE" />
+                                    <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                                    <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                                    <SortedAscendingHeaderStyle BackColor="#848384" />
+                                    <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                                    <SortedDescendingHeaderStyle BackColor="#575357" />
                                 </asp:GridView>
-                            </div>
                         </td>
-                    </tr>
-                </table>
-                <br />
+                    <td class="auto-style12">                           
+                                &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">
+                        &nbsp;</td>
+                    <td colspan="5" class="auto-style10">
                 <asp:Label ID="lbl_mensaje" runat="server" Text=""></asp:Label>
-            </blockquote>
-            <%-- pie de página --%>
+                    </td>
+                    <td class="auto-style12">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">
+                        &nbsp;</td>
+                    <td colspan="5" class="auto-style10">
+                        &nbsp;</td>
+                    <td class="auto-style12">
+                        &nbsp;</td>
+                </tr>
+            </table>
+            </section>
+
          <!--#include virtual="/menu/footer.txt" -->
-            </div>
-        </section>  
     </form>
 </body>
 </html>

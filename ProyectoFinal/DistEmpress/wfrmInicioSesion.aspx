@@ -10,8 +10,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/login.css" rel="stylesheet" />
-   
      <title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+
     <style type="text/css">
         .auto-style8 {
             text-align: center;
@@ -20,7 +22,6 @@
 
         .auto-style11 {
             text-align: center;
-            text-shadow: initial;
             font-family: "Myanmar Text";
             font-size: 16px;
             color: #999999;
@@ -37,7 +38,7 @@
         <%---------------------------------------------------------------------------------------------------------------------------------------------------------------%>
         <footer>
             <article>
-                <h1 class="auto-style11">Teoria de Sistemas II Cuatrimestre UAM &COPY 2018</h1>
+    <!--#include virtual="/menu/footer.txt" -->
             </article>
         </footer>
     </form>
