@@ -15,27 +15,30 @@ namespace DistEmpress
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            switch (Convert.ToChar(Session["perfil"]))
-            {
-                case 'C':
-                    usuario.Style.Add("display", "none");
-                    ingresoPedido.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-                case 'V':
-                    usuario.Style.Add("display", "none");
-                    ingresoProducto.Style.Add("display", "none");
-                    consultas.Style.Add("display", "none");
-                    break;
-            }
             try
             {
-                List<sp_Proyecto_CargarSupplier_Result> resultados = Logica.CargarSupplier();
+                if (!Page.IsPostBack)
+                {
+                    switch (Convert.ToChar(Session["perfil"]))
+                    {
+                        case 'C':
+                            usuario.Style.Add("display", "none");
+                            ingresoPedido.Style.Add("display", "none");
+                            consultas.Style.Add("display", "none");
+                            break;
+                        case 'V':
+                            usuario.Style.Add("display", "none");
+                            ingresoProducto.Style.Add("display", "none");
+                            consultas.Style.Add("display", "none");
+                            break;
+                    }
+                    List<sp_Proyecto_CargarSupplier_Result> resultados = Logica.CargarSupplier();
 
-                this.ddl_supplier.DataTextField = "CompanyName";
-                this.ddl_supplier.DataValueField = "SupplierID";
-                this.ddl_supplier.DataSource = resultados;
-                this.ddl_supplier.DataBind();
+                    this.ddl_supplier.DataTextField = "CompanyName";
+                    this.ddl_supplier.DataValueField = "SupplierID";
+                    this.ddl_supplier.DataSource = resultados;
+                    this.ddl_supplier.DataBind();
+                }   
             }
             catch (Exception ex)
             {

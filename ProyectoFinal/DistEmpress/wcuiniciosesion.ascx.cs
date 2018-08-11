@@ -48,6 +48,7 @@ namespace DistEmpress
                         Response.Write("<script language=javascript>alert('Credenciales Correctas....Bienvenido'"+resultados[0].Nombre_Usuario+");</script>");
                         Response.Redirect("wfrmIndex.aspx", false);
                         Session["perfil"] = resultados[0].TIPO_USUARIO;
+                        Session["usuario"] = resultados[0].Nombre_Usuario;
 
                     }
                 }

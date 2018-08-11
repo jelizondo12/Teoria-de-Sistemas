@@ -78,30 +78,31 @@
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label></td>
                             <td class="auto-style43"><asp:Label ID="lbl_numero_factura" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
-                            <td class="auto-style43" colspan="2">&nbsp;</td>
-                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style43" colspan="2"><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" /></td>
+                            <td class="auto-style43"><asp:ImageButton ID="ib_limpiar" runat="server" Height="39px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="41px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
                             <td class="auto-style43">&nbsp;</td>
                         </tr>
 
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label11" runat="server" Text="Cliente:"></asp:Label></td>
                             <td class="auto-style43"><asp:DropDownList ID="ddl_clientes" runat="server" Height="20px" Width="200px">
-                    </asp:DropDownList></td>
-                        <%--    <td class="auto-style37"><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" /></td>--%>
+                    </asp:DropDownList>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                           <td class="auto-style37">&nbsp;</td>
                         </tr>
 
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>
-                            <td class="auto-style43"><asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px" ReadOnly="True"></asp:TextBox></td>
-                            <td class="auto-style43" colspan="2"> <%--<asp:ImageButton ID="ib_agregar" runat="server" ImageUrl="~/imagenes/shopping-cart.png" CssClass="auto-style4" OnClick="ib_agregar_Click" CausesValidation="true" ValidationGroup="Modificar_Registrar" Height="50px" ImageAlign="Middle" Width="50px" />--%></td>
-                            <td class="auto-style43"><%--<asp:ImageButton ID="ib_limpiar" runat="server" Height="50px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" />--%></td>
+                            <td class="auto-style43"><asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
+                            <td class="auto-style43" colspan="2"> &nbsp;</td>
+                            <td class="auto-style43">&nbsp;</td>
                             <td class="auto-style43">&nbsp;</td>
                         </tr>
 
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
-                            <td class="auto-style43"><asp:DropDownList ID="DropDownList1" runat="server" height="20px" width="200px">
+                            <td class="auto-style43"><asp:DropDownList ID="ddl_producto" runat="server" height="20px" width="200px">
                                     </asp:DropDownList>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="31px" Width="31px" />
                                 </td>
                             <td class="auto-style43" colspan="2">&nbsp;</td>
                             <td class="auto-style43">&nbsp;</td>
@@ -143,7 +144,7 @@
 
                         <tr>
                             <td class="auto-style44"><asp:Label ID="Label7" runat="server" Text="Usuario: "></asp:Label></td>
-                            <td class="auto-style44"><input id="txt_usuario" type="text" /></td>
+                            <td class="auto-style44"><asp:Label ID="txt_usuario" runat="server"></asp:Label></td>
                             <td class="auto-style44" colspan="2">&nbsp;</td>
                             <td class="auto-style44">&nbsp;</td>
                             <td class="auto-style44">&nbsp;</td>
@@ -156,19 +157,19 @@
                             <td class="auto-style44">
                                     <asp:DropDownList ID="ddl_seleccionar" runat="server" Height="20px" Width="200px">
                                         <asp:ListItem Value="Seleccionar">Seleccionar</asp:ListItem>
-                                        <asp:ListItem Value="Registrar">Registrar</asp:ListItem>
-                                        <asp:ListItem>Modificar</asp:ListItem>
-                                        <asp:ListItem>Eliminar</asp:ListItem>
+                                        <asp:ListItem Value="Registrar">Agregar al carrito</asp:ListItem>
+                                        <asp:ListItem Value="Modificar">Modificar producto en el carrito</asp:ListItem>
+                                        <asp:ListItem Value="Eliminar">Eliminar producto en el carrito</asp:ListItem>
                                     </asp:DropDownList>
                                 </td>
-                            <td class="auto-style44" colspan="2">&nbsp;</td>
-                            <td class="auto-style44">&nbsp;</td>
+                            <td class="auto-style44" colspan="2"> <asp:ImageButton ID="ib_agregar" runat="server" ImageUrl="~/imagenes/shopping-cart.png" CssClass="auto-style4" OnClick="ib_agregar_Click" CausesValidation="true" ValidationGroup="Modificar_Registrar" Height="50px" ImageAlign="Middle" Width="50px" /></td>
+                            <td class="auto-style44"><asp:ImageButton style="margin-left:30px" ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/imagenes/receipt.png" OnClick="ImageButton1_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
                             <td class="auto-style44">&nbsp;</td>
                         </tr>
                         
                         <tr>
-                            <td class="auto-style46" colspan="3"><%--<asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="50px" Width="50px" />--%></td>
-                            <td class="auto-style46" colspan="3"><%--<asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="~/imagenes/receipt.png" OnClick="ImageButton1_Click" Width="50px" CausesValidation="false" ValidationGroup="Modificar_Registrar" />--%></td>
+                            <td class="auto-style46" colspan="3">&nbsp;</td>
+                            <td class="auto-style46" colspan="3">&nbsp;</td>
                         </tr>
                         
                         <tr>

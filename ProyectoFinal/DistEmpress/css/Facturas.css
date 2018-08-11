@@ -1,71 +1,22 @@
-﻿/**{
-	margin: 0px;
-	padding: 0px; 
-}
-
-body {
-    width:auto;
-    height:auto;
-    background-color: #000;
-    margin-top: 0px;
-    color: #CCCCCC;
-    font-family: 'Century Gothic';
-    align-content: center;
-}
-
-#contenedor{
-    width:1100px;
-    height:auto;
-	margin:0 auto;
-	background-color:#000;
-    position:center;
-}
-
-#cuerpo{
-  border:solid;
-  border-radius:15px;
-  border-color:#cccccc;
-  height:650px;
-}
-
-header{
-	width: 1100px;
-	height: auto;
-	left: 0px;
-	top: 0px;
-    color:#CCCCCC;
-	font-family:'Century Gothic';
-	font-size: 36px;
-	text-align: center;
-	font-weight: normal;
-	line-height:180px;
-	overflow: hidden;
-	background-color:#000;
-}
-
-#pie{
-    color:#CCCCCC;
-	font-family:'Century Gothic';
-	text-align: center;
-	font-weight: normal;
-	overflow: hidden;
-	background-color:#000;
-position:center;
-align-content:center;
-
-}
-
-#tabla{
+﻿.table{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius:12px;
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+    border:solid;
+    border-color:black;
     align-content:center;
-    position:center;
-    font-weight:normal;
-    font-family:'Century Gothic';
+    margin-left:auto;
+    margin-right:auto;
+}
+.footer{
+	margin-top:20px;
+	width: auto;
+	height: auto;
+	font-family: 'Century Gothic';
+	font-size: 12px;
+	text-align: center;
+	background-color: white;
 }
 
-h1 {
-    font-family: 'Century Gothic';
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-}*/
 
