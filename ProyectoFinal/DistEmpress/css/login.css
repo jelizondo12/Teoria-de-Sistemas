@@ -1,5 +1,10 @@
-﻿body {
-	background: #000;	
+﻿*{
+	margin: 0px;
+	padding: 0px; 
+}
+
+body {
+	background: rgb(255, 255, 255);	
 }
 
 .checkbox {
@@ -7,24 +12,17 @@
 	}
 
 .form-signin {
-    max-width: 380px;
-    padding: 15px 35px 45px;
+    padding: 45px 50px 40px;
     margin: 0 auto;
-    background-color: #fff;
     border: 1px solid rgba(0,0,0,0.1);
-    position:center;
     text-align: center;   
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-bottom-left-radius:20px;
-    border-bottom-right-radius:20px;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 } 
 
  .form-signin-heading{
-	  margin-bottom: 30px;
+	  margin-bottom: 0px;
       text-align:center;
       font-family: 'Route Du Soleil DEMO';
       font-size: 65px;
@@ -34,8 +32,8 @@
     position: relative;
     font-size: 16px;
     height: auto;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 0px;
+    box-sizing:border-box;
 }
 
 .focus {
@@ -60,6 +58,13 @@
       border-color: black;
       }
 
+    .imagen{
+        margin-bottom: auto;
+        margin-top:auto;
+        height:auto;
+        width: auto;
+        text-align:left;
+    }
 @media screen and (max-width: 800px) {
     #login {
         display:none;
