@@ -86,7 +86,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="auto-style10">
-                            <asp:LinkButton ID="lbtn_recuperar" runat="server" Text="Recuperar Contraseña" CssClass="auto-style8"></asp:LinkButton>
+                            <asp:LinkButton ID="lbtn_recuperar" runat="server" Text="Recuperar Contraseña" CssClass="auto-style8" OnClick="lbtn_recuperar_Click"></asp:LinkButton>
 </td>
                     </tr>
                     <tr>
