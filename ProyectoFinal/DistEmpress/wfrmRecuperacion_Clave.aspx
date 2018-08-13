@@ -104,7 +104,7 @@
                     <td class="auto-style10">&nbsp;</td>
                     <td class="auto-style1" colspan="3">
                         <asp:Label ID="lbl_mensaje" runat="server" CssClass="auto-style3" Font-Names="Offerings"></asp:Label>
-                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" />
+                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" ValidationGroup="a" />
                     </td>
                 </tr>
             </table>
