@@ -106,6 +106,8 @@
     <Content Include="imagenes\1.png" />
     <Content Include="imagenes\2.png" />
     <Content Include="imagenes\3.png" />
+    <Content Include="imagenes\6.jpg" />
+    <Content Include="imagenes\8.jpg" />
     <Content Include="imagenes\9.png" />
     <Content Include="imagenes\add-user.png" />
     <Content Include="imagenes\cancel.png" />
