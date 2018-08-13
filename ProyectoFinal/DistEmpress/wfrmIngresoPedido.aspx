@@ -41,6 +41,11 @@
             width: 200px;
             height: 20px;
         }
+        .auto-style48 {
+            height: 38px;
+            width: 338px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -78,8 +83,8 @@
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label10" runat="server" Text="Numero de factura:"></asp:Label></td>
                             <td class="auto-style43"><asp:Label ID="lbl_numero_factura" runat="server" Text="" height="20px" width="200px"></asp:Label></td>
-                            <td class="auto-style43" colspan="2"><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" /></td>
-                            <td class="auto-style43"><asp:ImageButton ID="ib_limpiar" runat="server" Height="39px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="41px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
+                            <td class="auto-style48" colspan="2"><asp:ImageButton ID="btn_generarFactura" runat="server" Height="30px" ImageUrl="~/imagenes/rotate.png" Width="30px" OnClick="btn_generarFactura_Click" ImageAlign="AbsMiddle" /></td>
+                            <td class="auto-style43">&nbsp;</td>
                             <td class="auto-style43">&nbsp;</td>
                         </tr>
 
@@ -93,8 +98,9 @@
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label9" runat="server" Text="Id del Pedido: "></asp:Label></td>
                             <td class="auto-style43"><asp:TextBox ID="txt_idpedido" runat="server" Height="20px" Width="200px"></asp:TextBox></td>
-                            <td class="auto-style43" colspan="2"> &nbsp;</td>
-                            <td class="auto-style43">&nbsp;</td>
+                            <td class="auto-style48" colspan="2"> <asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="31px" Width="31px" />
+                                </td>
+                            <td class="auto-style48"><asp:ImageButton ID="ib_limpiar" runat="server" Height="39px" ImageUrl="~/imagenes/eraser.png" OnClick="ib_limpiar_Click" Width="41px" CausesValidation="false" ValidationGroup="Modificar_Registrar" /></td>
                             <td class="auto-style43">&nbsp;</td>
                         </tr>
 
@@ -102,7 +108,7 @@
                             <td class="auto-style43"><asp:Label ID="Label2" runat="server" Text="Nombre del Producto: "></asp:Label></td>
                             <td class="auto-style43"><asp:DropDownList ID="ddl_producto" runat="server" height="20px" width="200px">
                                     </asp:DropDownList>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:ImageButton ID="ib_refresh" runat="server" ImageUrl="~/imagenes/rotate.png" CssClass="auto-style3" OnClick="ib_refresh_Click" Height="31px" Width="31px" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                                 </td>
                             <td class="auto-style43" colspan="2">&nbsp;</td>
                             <td class="auto-style43">&nbsp;</td>
@@ -120,7 +126,7 @@
                         <tr>
                             <td class="auto-style43"><asp:Label ID="Label4" runat="server" Text="Cantidad: "></asp:Label></td>
                             <td class="auto-style43"><input runat="server" id="txt_cantidad" type="number" min="1" class="auto-style47" /></td>
-                            <td class="auto-style43" colspan="2"><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_cantidad" ErrorMessage="Cantidad no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
+                            <td class="auto-style48" colspan="2"><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_cantidad" ErrorMessage="Cantidad no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                                 </td>
                             <td class="auto-style43">&nbsp;</td>
                             <td class="auto-style43">&nbsp;</td>

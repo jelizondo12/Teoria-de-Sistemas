@@ -54,6 +54,38 @@
             height: 48px;
             text-align: center;
         }
+        .auto-style13 {
+            height: 33px;
+            width: 63px;
+        }
+        .auto-style14 {
+            height: 34px;
+            width: 63px;
+        }
+        .auto-style15 {
+            height: 33px;
+            width: 45px;
+        }
+        .auto-style16 {
+            height: 34px;
+            width: 45px;
+            text-align: center;
+        }
+        .auto-style17 {
+            height: 34px;
+            width: 63px;
+            text-align: center;
+        }
+        .auto-style18 {
+            height: 33px;
+            width: 63px;
+            text-align: center;
+        }
+        .auto-style19 {
+            height: 33px;
+            width: 45px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -94,13 +126,13 @@
                     <td class="auto-style8" >&nbsp;</td>
                     <td class="auto-style8" >
                         &nbsp;</td>
-                    <td class="auto-style8" >
+                    <td class="auto-style15" >
                         &nbsp;</td>
                     <td  colspan="2" class="auto-style8">
                         &nbsp;</td>
                     <td class="auto-style8" >
                         &nbsp;</td>
-                    <td class="auto-style8" >
+                    <td class="auto-style13" >
                         &nbsp;</td>
                     <td class="auto-style8" >
                         &nbsp;</td>
@@ -111,21 +143,22 @@
                 </tr>
                 <tr>
                     <td class="auto-style8" ></td>
-                    <td class="auto-style8" >&nbsp;ID del Producto: </td>
+                    <td class="auto-style8" >&nbsp;<asp:Label ID="Label4" runat="server" Text="   Nombre del Producto:"></asp:Label>
+                    &nbsp;</td>
+                    <td class="auto-style8" >
+                        <asp:DropDownList ID="ddl_producto" runat="server" height="20px" width="200px">
+                                    </asp:DropDownList>
+                    </td>
+                    <td class="auto-style19" >
+                        
+                    </td>
+                    <td  colspan="2" class="auto-style8">
+                        ID del Producto:</td>
                     <td class="auto-style8" >
                         <asp:TextBox ID="txt_productid" runat="server" Width="200px" CssClass="auto-style10" Height="25px"></asp:TextBox>
                     </td>
-                    <td class="auto-style8" >
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txt_productid" ErrorMessage="El campo ProductID no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
-                    </td>
-                    <td  colspan="2" class="auto-style8">
-                        <asp:Label ID="Label4" runat="server" Text="   Nombre del Producto:"></asp:Label>
-                    </td>
-                    <td class="auto-style8" >
-                        <asp:TextBox ID="txt_productname" runat="server" Height="25px" Width="200px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style8" >
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txt_productname" ErrorMessage="El campo ProductName no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
+                    <td class="auto-style18" >
+                        <a
                     </td>
                     <td class="auto-style8" >
                         <asp:ImageButton ID="ib_refrescar" runat="server" ImageUrl="~/imagenes/rotate.png" OnClick="ib_refrescar_Click" Height="50px" ValidationGroup="Modificar_Registrar" CausesValidation="false" ImageAlign="Middle" Width="50px" />
@@ -134,8 +167,7 @@
                         <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/eraser.png" OnClick="ImageButton1_Click" Width="50px" Height="50px" ImageAlign="Middle" />
                     </td>
                     <td class="auto-style8" >
-                        <asp:Button ID="btnInventario" runat="server" Text="Inventario" Width="150px" OnClick="Button1_Click" Height="25px" Font-Names="MacyandKaraFont" Font-Size="Large" />
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style8" >&nbsp;</td>
@@ -145,7 +177,7 @@
                             <asp:ListItem Selected="True" Value="1">Seleccione</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style8" >
+                    <td class="auto-style19" >
                         &nbsp;</td>
                     <td  colspan="2" class="auto-style8">
                         <asp:Label ID="Label6" runat="server" Text="Categoría:"></asp:Label>
@@ -164,7 +196,7 @@
                             <asp:ListItem Value="10">Tools</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style8" >
+                    <td class="auto-style18" >
                         &nbsp;</td>
                     <td class="auto-style8" >&nbsp;</td>
                     <td class="auto-style8" >&nbsp;</td>
@@ -178,7 +210,7 @@
                     <td class="auto-style9" >
                         <asp:TextBox ID="txt_quantityperunit" runat="server" Height="25px" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style16" >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txt_quantityperunit" ErrorMessage="El campo QuantityPerUnit no puede ir vacío" ValidationGroup="Modificar_Registrar" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                     <td  colspan="2" class="auto-style9">
@@ -187,7 +219,7 @@
                     <td class="auto-style9" >
                         <asp:TextBox ID="txt_unitprice" runat="server" Height="25px" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style17" >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txt_unitprice" ErrorMessage="El campo UnitPrice no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style9" >&nbsp;</td>
@@ -202,7 +234,7 @@
                     <td class="auto-style9" >
                         <asp:TextBox ID="txt_unitsinstock" runat="server" Height="25px" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style16" >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txt_unitsinstock" ErrorMessage="El campo Units in Stock no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                     </td>
                     <td  colspan="2" class="auto-style9">
@@ -211,7 +243,7 @@
                     <td class="auto-style9" >
                         <asp:TextBox ID="txt_unitsonorder" runat="server" Height="25px" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style17" >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txt_unitsonorder" ErrorMessage="El campo UnitsOnOrder no puede ir vacío" ValidationGroup="Modificar_Registrar" ForeColor="Red">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style9" >&nbsp;</td>
@@ -225,7 +257,7 @@
                     <td class="auto-style9" >
                         <asp:TextBox ID="txt_reorderlevel" runat="server" Height="25px" Width="200px"></asp:TextBox>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style16" >
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txt_reorderlevel" ErrorMessage="El campo Reorder Level no puede ir vacío" ForeColor="Red" ValidationGroup="Modificar_Registrar">*</asp:RequiredFieldValidator>
                     </td>
                     <td  colspan="2" class="auto-style9">
@@ -237,7 +269,7 @@
                             <asp:ListItem Value="No" Selected="True">No</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style14" >
                         &nbsp;</td>
                     <td class="auto-style9" >&nbsp;</td>
                     <td class="auto-style9" >&nbsp;</td>
@@ -255,13 +287,13 @@
                             <asp:ListItem Value="I">Inactivo</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style9" >
+                    <td class="auto-style16" >
                         &nbsp;</td>
                     <td  colspan="2" class="auto-style9">
                         &nbsp;</td>
                     <td class="auto-style9" >
                         &nbsp;</td>
-                    <td class="auto-style9" >
+                    <td class="auto-style14" >
                         &nbsp;</td>
                     <td class="auto-style9" >&nbsp;</td>
                     <td class="auto-style9" >&nbsp;</td>

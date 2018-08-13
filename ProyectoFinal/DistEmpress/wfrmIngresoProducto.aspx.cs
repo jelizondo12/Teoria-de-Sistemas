@@ -38,6 +38,13 @@ namespace DistEmpress
                     this.ddl_supplier.DataValueField = "SupplierID";
                     this.ddl_supplier.DataSource = resultados;
                     this.ddl_supplier.DataBind();
+
+                    List<sp_Proyecto_Reporte_Inventario_Result> resultados2 = Logica.ObtenerInventario(0, 0);
+
+                    this.ddl_producto.DataTextField = "ProductName";
+                    this.ddl_producto.DataValueField = "ProductID";
+                    this.ddl_producto.DataSource = resultados2;
+                    this.ddl_producto.DataBind();
                 }   
             }
             catch (Exception ex)
@@ -56,7 +63,7 @@ namespace DistEmpress
                     Products Productos = new Products();
 
                     Productos.ProductID = Convert.ToInt32(txt_productid.Text.Trim());
-                    Productos.ProductName = txt_productname.Text.Trim();
+                    Productos.ProductName = ddl_producto.SelectedItem.ToString();
                     Productos.SupplierID = Convert.ToInt32(ddl_supplier.SelectedValue);
                     Productos.CategoryID = Convert.ToInt32(ddl_category.SelectedValue);
                     Productos.QuantityPerUnit = txt_quantityperunit.Text.Trim();
@@ -72,7 +79,7 @@ namespace DistEmpress
                     Response.Write("<script language=javascript>alert('Producto Agregado');</script>");
 
                     txt_productid.Text = "";
-                    txt_productname.Text = "";
+                    ddl_producto.SelectedIndex = 0;
                     ddl_supplier.SelectedIndex = 1;
                     ddl_category.SelectedValue = "10";
                     txt_quantityperunit.Text = "";
@@ -101,7 +108,7 @@ namespace DistEmpress
                     Products Productos = new Products();
 
                     Productos.ProductID = Convert.ToInt32(txt_productid.Text.Trim());
-                    Productos.ProductName = txt_productname.Text.Trim();
+                    Productos.ProductName = ddl_producto.SelectedItem.ToString();
                     Productos.SupplierID = Convert.ToInt32(ddl_supplier.Text.Trim());
                     Productos.CategoryID = Convert.ToInt32(ddl_category.Text.Trim());
                     Productos.QuantityPerUnit = txt_quantityperunit.Text.Trim();
@@ -115,7 +122,7 @@ namespace DistEmpress
                     Logica.AgregarProductoModificado(Productos);
 
                     txt_productid.Text = "";
-                    txt_productname.Text = "";
+                    ddl_producto.SelectedIndex= 0;
                     ddl_supplier.SelectedValue = "1";
                     ddl_category.SelectedValue = "10";
                     txt_quantityperunit.Text = "";
@@ -143,17 +150,16 @@ namespace DistEmpress
 
         protected void ib_refrescar_Click(object sender, ImageClickEventArgs e)
         {
-            if (txt_productid.Text != "")
-            {
+            
                 Products Productos = new Products();
 
-                Productos.ProductID = Convert.ToInt32(txt_productid.Text.Trim());
+                Productos.ProductID = Convert.ToInt32(ddl_producto.SelectedValue);
 
                 List<sp_Proyecto_VerificarProductoModificar_Result> resultados = Logica.VerificarProductoModificar(Productos);
 
                 if (resultados.Count > 0)
                 {
-                    txt_productname.Text = resultados[0].ProductName;
+                    txt_productid.Text = ddl_producto.SelectedValue.ToString();
                     ddl_supplier.SelectedValue = resultados[0].SupplierID.ToString();
                     ddl_category.SelectedValue = resultados[0].CategoryID.ToString();
                     txt_unitprice.Text = resultados[0].UnitPrice.ToString();
@@ -176,7 +182,7 @@ namespace DistEmpress
                 else
                 {
 
-                    txt_productname.Text = "";
+                    ddl_producto.SelectedIndex = 0;
                     ddl_supplier.SelectedIndex = 1;
                     ddl_category.SelectedValue = "10";
                     txt_quantityperunit.Text = "";
@@ -190,12 +196,6 @@ namespace DistEmpress
                     lbl_mensaje.Text = "Producto No existe";
                 }
             }
-            else
-            {
-                lbl_mensaje.ForeColor = System.Drawing.Color.Red;
-                lbl_mensaje.Text = "El campo ProductID no puede ir vacío";
-            }
-        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -205,7 +205,7 @@ namespace DistEmpress
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
             txt_productid.Text = "";
-            txt_productname.Text = "";
+            ddl_producto.SelectedIndex = 0;
             ddl_supplier.SelectedValue = "1";
             ddl_category.SelectedValue = "10";
             txt_quantityperunit.Text = "";

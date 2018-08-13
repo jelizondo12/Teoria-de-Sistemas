@@ -5,3 +5,14 @@ C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_B
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
 C:\Users\kther\Documents\Visual Studio 2015\Projects\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_BLL.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\DistEmpress_DAL.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\Entidades.pdb
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\bin\Debug\EntityFramework.xml
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.csprojResolveAssemblyReference.cache
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.dll
+C:\Users\kther\Desktop\github-teoria\Teoria-de-Sistemas\ProyectoFinal\DistEmpress_BLL\obj\Debug\DistEmpress_BLL.pdb

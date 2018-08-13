@@ -119,6 +119,9 @@
                 </td>
             </tr>
             <tr>
+                <td colspan="2" class="auto-style16"><asp:Label ID="lbl_mensaje" runat="server" CssClass="auto-style" Style="font-family: Offerings; font-size: x-large"></asp:Label><asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="#CC0000" ValidationGroup="Recuperar_Clave" /></td>
+            </tr>
+            <tr>
                 <td colspan="2" class="auto-style16">&nbsp;</td>
             </tr>
             </table>

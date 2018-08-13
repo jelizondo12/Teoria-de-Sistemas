@@ -94,15 +94,6 @@ namespace DistEmpress {
         protected global::System.Web.UI.WebControls.ImageButton btn_generarFactura;
         
         /// <summary>
-        /// Control ib_limpiar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ib_limpiar;
-        
-        /// <summary>
         /// Control Label11.
         /// </summary>
         /// <remarks>
@@ -139,6 +130,24 @@ namespace DistEmpress {
         protected global::System.Web.UI.WebControls.TextBox txt_idpedido;
         
         /// <summary>
+        /// Control ib_refresh.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ib_refresh;
+        
+        /// <summary>
+        /// Control ib_limpiar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton ib_limpiar;
+        
+        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -155,15 +164,6 @@ namespace DistEmpress {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddl_producto;
-        
-        /// <summary>
-        /// Control ib_refresh.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ib_refresh;
         
         /// <summary>
         /// Control Label3.
