@@ -67,7 +67,7 @@
                         <asp:TextBox ID="txt_contraActual" runat="server" Height="20px" Width="200px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style11">
-                        <asp:RequiredFieldValidator ID="rvf_Actual" runat="server" ControlToValidate="txt_contraActual" ErrorMessage="Digite la contraseña que se le envio al correo" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rvf_Actual" runat="server" ControlToValidate="txt_contraActual" ErrorMessage="Digite la contraseña que se le envio al correo" ForeColor="#CC0000" ValidationGroup="a">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -77,8 +77,8 @@
                         <asp:TextBox ID="txt_nuevaContra" runat="server" Height="20px" Width="200px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style11">
-                        <asp:RequiredFieldValidator ID="rfv_nueva" runat="server" ControlToValidate="txt_nuevaContra" ErrorMessage="Debe igresar la nueva contraseña" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="rev_nueva" runat="server" ControlToValidate="txt_nuevaContra" ErrorMessage="La nueva contraseña no cumple con los estandares de seguridad de una clave segura" ForeColor="#CC0000" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$">*</asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="rfv_nueva" runat="server" ControlToValidate="txt_nuevaContra" ErrorMessage="Debe igresar la nueva contraseña" ForeColor="#CC0000" ValidationGroup="a">*</asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="rev_nueva" runat="server" ControlToValidate="txt_nuevaContra" ErrorMessage="La nueva contraseña no cumple con los estandares de seguridad de una clave segura" ForeColor="#CC0000" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$" ValidationGroup="a">*</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -88,7 +88,7 @@
                         <asp:TextBox ID="txt_verificarNuevaContra" runat="server" Height="20px" Width="200px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style11">
-                        <asp:RequiredFieldValidator ID="rfv_verificar" runat="server" ControlToValidate="txt_verificarNuevaContra" ErrorMessage="Debe igresar la nueva contraseña nuevamente para validar" ForeColor="#CC0000">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfv_verificar" runat="server" ControlToValidate="txt_verificarNuevaContra" ErrorMessage="Debe igresar la nueva contraseña nuevamente para validar" ForeColor="#CC0000" ValidationGroup="a">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -96,7 +96,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style1" colspan="4">
-                        <asp:Button ID="btn_realizar" runat="server" OnClick="Button1_Click" Text="Cambiar contraseña" Width="198px" Font-Names="Offerings" Font-Size="20px" Height="50px" />&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btn_realizar" runat="server" OnClick="Button1_Click" Text="Cambiar contraseña" Width="198px" Font-Names="Offerings" Font-Size="20px" Height="50px" ValidationGroup="a" />&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" Font-Names="Offerings" Font-Size="20px" Height="50px" Width="110px" />
                     </td>
                 </tr>

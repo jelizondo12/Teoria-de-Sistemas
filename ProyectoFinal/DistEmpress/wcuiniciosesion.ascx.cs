@@ -72,6 +72,29 @@ namespace DistEmpress
 
         protected void lbl_recuperarClave_Click(object sender, EventArgs e)
         {
+    
+        }
+
+        #region Metodos
+        private string GenerarCodigo()
+        {
+            Random obj = new Random();
+            string sCadena = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890";
+            int longitud = sCadena.Length;
+            char cletra;
+            int nlongitud = 5;
+            string sNuevacadena = string.Empty;
+            for (int i = 0; i < nlongitud; i++)
+            {
+                cletra = sCadena[obj.Next(nlongitud)];
+                sNuevacadena += cletra.ToString();
+            }
+            return sNuevacadena;
+        }
+        #endregion
+
+        protected void lbtn_recuperar_Click(object sender, EventArgs e)
+        {
             MailMessage correo = new MailMessage();//Instancia para crear el mensaje
             SmtpClient envio = new SmtpClient();//Instancia para configurr envio
 
@@ -124,7 +147,7 @@ namespace DistEmpress
                     {
                         lbl_mensaje.ForeColor = System.Drawing.Color.Red;
                         lbl_mensaje.Text = "El usuario no existe";
-                    }    
+                    }
                 }
             }
             catch (Exception ex)
@@ -133,24 +156,5 @@ namespace DistEmpress
                 throw ex;
             }
         }
-
-
-        #region Metodos
-        private string GenerarCodigo()
-        {
-            Random obj = new Random();
-            string sCadena = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890";
-            int longitud = sCadena.Length;
-            char cletra;
-            int nlongitud = 5;
-            string sNuevacadena = string.Empty;
-            for (int i = 0; i < nlongitud; i++)
-            {
-                cletra = sCadena[obj.Next(nlongitud)];
-                sNuevacadena += cletra.ToString();
-            }
-            return sNuevacadena;
-        }
-        #endregion
     }
 }

@@ -17,23 +17,22 @@ namespace DistEmpress
         string claveActual;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
-                identificacion = Request.QueryString["Identificacion"];
-                claveActual = Request.QueryString["ClaveActual"];
-            }
+       
+        identificacion = Request.QueryString["Identificacion"];
+        claveActual = Request.QueryString["ClaveActual"];      
            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (this.txt_contraActual.Text.Trim() == claveActual)
+            if (txt_contraActual.Text.Trim() == claveActual)
             {
-                if (this.txt_nuevaContra.Text.Trim() == this.txt_verificarNuevaContra.Text.Trim())
+                if (txt_nuevaContra.Text.Trim() == txt_verificarNuevaContra.Text.Trim())
                 {
                     Logica.ModificarContra(0,Convert.ToInt32(identificacion), Logica.cifrarClave(txt_nuevaContra.Text.Trim()));
 
                     Response.Write("<script language=javascript>alert('La contraseña se cambio con exito');</script>");
+                    Response.Redirect("wfrmInicioSesion.aspx", false);
                 }
                 else
                 {
