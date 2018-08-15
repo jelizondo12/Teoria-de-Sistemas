@@ -156,5 +156,10 @@ namespace DistEmpress
                 throw ex;
             }
         }
+
+        protected void lbtn_recuperar_Click1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
