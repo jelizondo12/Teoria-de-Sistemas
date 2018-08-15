@@ -1,5 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="wcuiniciosesion.ascx.cs" Inherits="DistEmpress.wcuiniciosesion" %>
 
+
 <link href="css/login.css" rel="stylesheet" />
 
 <%---------------------------------------------------------------------------------------------------------------------------------------------------------------%>
@@ -13,9 +14,9 @@
     }
 
     .auto-style3 {
-        /*max-width: 380px;*/
+      /*/  /max-width: 380px;/*/
         padding: 15px 35px 45px;
-        /*margin-top: 50px;*/
+        /*/margin-top: 50px;/*/
         padding: 45px 50px 40px;
         background-color: black;
         position: center;
@@ -84,7 +85,7 @@
 <%---------------------------------------------------------------------------------------------------------------------------------------------------------------%>
 <form id="login" style="max-height:250px">
 <div class="imagen">
-    <asp:Image ID="Image1" runat="server" ImageAlign="Left" ImageUrl="~/imagenes/7.jpg" Height="706px" Width="650px" />
+    <asp:Image ID="Image1" runat="server" ImageAlign="Left" ImageUrl="~/imagenes/5.jpg" Height="706px" Width="650px" />
 </div>
 <div  class="auto-style3">
         <table style="margin-left:80px;" class="auto-style14">

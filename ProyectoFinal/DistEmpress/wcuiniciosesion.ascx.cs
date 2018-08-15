@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-/*Agregar*/
+//Agregar/
 using System.Net;
 using System.Net.Mail;
 using DistEmpress_BLL;
@@ -18,6 +18,7 @@ namespace DistEmpress
         {
             if (!Page.IsPostBack)
             {
+
             }
         }
 
@@ -32,20 +33,20 @@ namespace DistEmpress
 
                 List<sp_Proyecto_VerificarSesion_Result> resultados = Logica.VerificarSesion(usuario);
 
-                /*Los resultados tienen que devolver usuario,contraseña,tipo de usuario*/
+                // Los resultados tienen que devolver usuario,contraseña,tipo de usuario /
 
                 if (resultados.Count > 0)
-                { 
-                    if(resultados[0].Clave_temporal==true)
+                {
+                    if (resultados[0].Clave_temporal == true)
                     {
 
-                        Response.Redirect("wfrmRecuperacion_Clave.aspx?Identificacion="+resultados[0].Identificacion+"&ClaveActual="+ resultados[0].clave,false);
+                        Response.Redirect("wfrmRecuperacion_Clave.aspx?Identificacion=" + resultados[0].Identificacion + "&ClaveActual=" + resultados[0].clave, false);
                     }
                     else
                     {
                         wfrmIndex re = new wfrmIndex();
 
-                        Response.Write("<script language=javascript>alert('Credenciales Correctas....Bienvenido'"+resultados[0].Nombre_Usuario+");</script>");
+                        Response.Write("<script language=javascript>alert('Credenciales Correctas....Bienvenido'" + resultados[0].Nombre_Usuario + ");</script>");
                         Response.Redirect("wfrmIndex.aspx", false);
                         Session["perfil"] = resultados[0].TIPO_USUARIO;
                         Session["usuario"] = resultados[0].Nombre_Usuario;
@@ -72,7 +73,7 @@ namespace DistEmpress
 
         protected void lbl_recuperarClave_Click(object sender, EventArgs e)
         {
-    
+
         }
 
         #region Metodos
@@ -155,11 +156,6 @@ namespace DistEmpress
 
                 throw ex;
             }
-        }
-
-        protected void lbtn_recuperar_Click1(object sender, EventArgs e)
-        {
-
         }
     }
 }
