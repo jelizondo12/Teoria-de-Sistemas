@@ -155,7 +155,7 @@
                     <td  colspan="2" class="auto-style8">
                         ID del Producto:</td>
                     <td class="auto-style8" >
-                        <asp:TextBox ID="txt_productid" runat="server" Width="200px" CssClass="auto-style10" Height="25px"></asp:TextBox>
+                        <asp:TextBox ID="txt_productid" runat="server" Width="200px" CssClass="auto-style10" Height="25px" ReadOnly="True"></asp:TextBox>
                     </td>
                     <td class="auto-style18" >
                         <a
